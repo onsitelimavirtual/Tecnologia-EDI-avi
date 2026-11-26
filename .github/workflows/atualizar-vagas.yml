@@ -59,8 +59,8 @@ jobs:
         run: |
           VERSION="$(sed -n '1s/.*Versão \([0-9][0-9.]*\).*/\1/p' README.md)"
           test -n "$VERSION"
-          ARCHIVE="painel-de-oportunidades-v${VERSION}.zip"
-          zip -r "$ARCHIVE" . -x ".git/*" "$ARCHIVE"
+          ARCHIVE="$RUNNER_TEMP/painel-de-oportunidades-v${VERSION}.zip"
+          zip -r "$ARCHIVE" . -x ".git/*"
           echo "version=$VERSION" >> "$GITHUB_OUTPUT"
           echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
       - name: Disponibilizar pacote ZIP
