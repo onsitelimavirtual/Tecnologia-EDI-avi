@@ -26,7 +26,7 @@ A suíte contém 16 testes unitários. Ela deve ser executada pelo workflow com:
 node --test tests/*.test.mjs
 ```
 
-Os resultados reais da primeira execução serão os exibidos no GitHub Actions. Não se declara aprovação de execução remota antes da conclusão do workflow.
+A validação da versão 4.3.3 foi concluída pelo GitHub Actions em 26/11/2026, com 16 testes aprovados e 28 verificações de QA aprovadas.
 
 ## Critérios de publicação
 
@@ -42,6 +42,18 @@ Os resultados reais da primeira execução serão os exibidos no GitHub Actions.
 - A descoberta automática não transforma manchetes em vagas confirmadas nem altera prazos de editais.
 - A curadoria de concursos fornecida permanece datada de 15/10/2026 e contém prazos que precisam de conferência humana. O sistema não inventa reabertura nem prorrogação.
 - O teste automatizado não substitui a validação do resultado publicado no GitHub Pages nem o teste físico em Android.
+
+## Validação da versão 4.3.3 — métrica de acessos
+
+**Execução concluída em 26/11/2026, às 02h30 UTC.**
+
+- Testes automatizados: **16 aprovados, 0 falhas**.
+- QA de integridade: **28 de 28 verificações aprovadas**, sem falhas críticas; os três alertas já conhecidos de curadoria e prazos de concursos permanecem.
+- Publicação dos catálogos: concluída com sucesso.
+- Build e deploy do GitHub Pages: concluídos com sucesso.
+- Indicador de acessos: cartão presente no HTML publicado, com namespace e chave fixos do CounterAPI e tratamento de indisponibilidade.
+
+O total é iniciado na ativação do contador e aumenta a cada visualização contabilizada da página publicada. O valor depende da resposta do serviço externo no navegador do visitante; não é uma métrica de pessoas únicas nem um registro antifraude.
 
 ## Estado da última execução antes da métrica v4.3.3
 
