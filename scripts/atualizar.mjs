@@ -112,7 +112,8 @@ export async function updateCatalog({fetchFn=globalThis.fetch,now=new Date(),des
   const seen=new Set();
   const records=[...groups.flatMap(x=>x.items),...previous]
     .filter(x => {
-      if(!x || x.origin!=='automatico'||typeof x.url!=='string'||typeof x.published!=='string')return false;
+      if(!x || x.origin!=='automatico'||typeof x.url!=='string'||typeof x.published!=='string'||typeof x.title!=='string')return false;
+      if(!likelyOpportunity(x.title))return false;
       const dt=new Date(x.published+'T00:00:00Z');
       if(!Number.isFinite(dt.getTime())||now.getTime()-dt.getTime()>AGE_DAYS*MS_DAY)return false;
       if(!googleLink(x.url)||seen.has(x.url))return false;
