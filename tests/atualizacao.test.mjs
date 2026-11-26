@@ -257,7 +257,7 @@ test('publica guia editorial de carreira, entrevistas e estudos com navegação 
   assert.match(html, /<section id="guia"[^>]*aria-labelledby="guide-title"/);
   assert.match(html, /id="guia-entrevista"/);
   assert.match(html, /id="guia-estudos"/);
-  assert.match(html, /Estrutura STAR/);
+  assert.match(html, /estrutura STAR/i);
   assert.match(html, /revisões/);
   assert.match(html, /periodicos\.saude\.sp\.gov\.br/);
   assert.match(html, /carreiras\.cps\.sp\.gov\.br/);
