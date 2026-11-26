@@ -1,7 +1,21 @@
-# Painel de Oportunidades de Emprego — Versão 4.3.3
+# Painel de Oportunidades de Emprego — Versão 4.4.0
 
-**Projeto autoral: Nailson Rodrigues de Lima.** Aplicação web para organizar referências de oportunidades de emprego, concursos públicos e divulgação gratuita de softwares autorais no rodapé.
+**Projeto autoral: Nailson Rodrigues de Lima.** Portal web responsivo para organizar referências de oportunidades de emprego e concursos públicos, com guia editorial de carreira, preparação para entrevistas, técnicas de estudo, segurança na busca e divulgação de projetos autorais.
 
+
+
+## Versão 4.4.0 — guia de orientação profissional
+
+- Criada a seção **Preparação**, integrada à navegação principal e adaptada para telas pequenas.
+- Incluídas recomendações práticas para pesquisar oportunidades, analisar requisitos, organizar candidaturas e usar os recursos do painel.
+- Adicionadas orientações de currículo, segurança contra falsas ofertas e preparação para entrevistas presenciais e on-line.
+- Incluída a estrutura STAR para organizar respostas sobre experiências e competências.
+- Acrescentadas técnicas de estudo com prática de recuperação, revisão espaçada, resolução de questões e registro de erros.
+- Criado um plano semanal adaptável, perguntas frequentes e links para materiais públicos de aprofundamento.
+- Atualizados título, descrição da página e versão para 4.4.0.
+- Corrigido o caminho do favicon para o arquivo da raiz do repositório.
+
+O guia apresenta conteúdo informativo original e links de referência. Ele não garante contratação, não confirma vagas e não substitui editais ou instruções oficiais.
 
 ## Versão 4.3.3 — métrica de acessos
 
@@ -82,14 +96,14 @@ A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades
 Para os testes de interface locais, com Playwright e Chromium instalados:
 
 ```bash
-python tests/testar_v4_1.py
+Não há uma suíte E2E de navegador incluída nesta versão; a validação da interface deve ser complementada por testes manuais em Android, desktop, teclado e leitor de tela.
 ```
 
 Os testes usam fixtures e respostas simuladas; não substituem a primeira execução real do GitHub Actions, nem a validação manual em aparelhos físicos e leitores de tela.
 
 ## Publicidade autoral
 
-A divulgação dos softwares autorais permanece no rodapé e oculta quando não há anúncios habilitados. O editor `ferramentas-locais/editor-projetos.html` é de uso local do administrador e **não deve ser publicado**. Ele gera `projetos-autorais.json`, que deve ser enviado manualmente à raiz do repositório. O motor de QA confere se os anúncios habilitados têm nome, descrição, URL HTTPS válida quando informada e imagem permitida.
+A divulgação dos softwares autorais permanece no rodapé e oculta quando não há anúncios habilitados. O editor `editor-projetos.html` é de uso local do administrador e **não deve ser publicado**. Ele gera `projetos-autorais.json`, que deve ser enviado manualmente à raiz do repositório. O motor de QA confere se os anúncios habilitados têm nome, descrição, URL HTTPS válida quando informada e imagem permitida.
 
 ## Arquivos principais
 
