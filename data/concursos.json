@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T19:07:52.388Z",
+  "generatedAt": "2026-11-26T21:42:33.633Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -85,6 +85,13 @@
   ],
   "leads": [
     {
+      "id": "lead-34115f62c71acd6b",
+      "title": "Educação de SP abre inscrições para concurso com 5.000 vagas de professores nesta quinta-feira (26) - agenciasp.sp.gov.br",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZbWdqZ3JwVEZRbVlHaF9vb0lsMzZBNHFYbW1mVTIzN28yMndDaFhDT3l6S3pLaUM3cTVTZ1QxNG5IV1RUbDRNRVljX05TZ2V4b3ltVVhoZzQwV1NtLVN5X0ZzdUctMnlNSVZDdGs1OHF6bmZTZTdr?oc=5",
+      "published": "2026-11-26",
+      "source": "https://www.agenciasp.sp.gov.br"
+    },
+    {
       "id": "lead-328b22eb11b50c5d",
       "title": "Concurso Público nº 001/2026:... - Prefeitura de Iepê",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
@@ -99,11 +106,11 @@
       "source": "https://portal.coren-sp.gov.br"
     },
     {
-      "id": "lead-34115f62c71acd6b",
-      "title": "Educação de SP abre inscrições para concurso com 5.000 vagas de professores nesta quinta-feira (26) - www.agenciasp.sp.gov.br",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZbWdqZ3JwVEZRbVlHaF9vb0lsMzZBNHFYbW1mVTIzN28yMndDaFhDT3l6S3pLaUM3cTVTZ1QxNG5IV1RUbDRNRVljX05TZ2V4b3ltVVhoZzQwV1NtLVN5X0ZzdUctMnlNSVZDdGs1OHF6bmZTZTdr?oc=5",
+      "id": "lead-b9f155ff2704e8b7",
+      "title": "Concurso Público do Cofen Oferece Oportunidades para 13 Cargos de Nível Superior - Biblioteca Virtual de Enfermagem - Cofen",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQU01WY0NXYXlsM2NaWXpIZEtWdWhRS09EcDVfeVdnaUlxUFZ0ekF6TE1CTmxSdXI5eTh4b3J6eTF5Vl91OFNzOEg0aV9LNXlNZlBfTG1DZmExNmM4d2l3dlU5aUliMS1CQXJPczlEWUk3dllYOHB0V3NpYlAxSTlZUmxfVmZrdlprdnBrSTlNaVNaZG81cDZKZ0RTQlZ5MXZMdWdrbENwSGtqMzZTRUlCNlVUbw?oc=5",
       "published": "2026-11-26",
-      "source": "https://www.agenciasp.sp.gov.br"
+      "source": "https://biblioteca.cofen.gov.br"
     },
     {
       "id": "lead-b10cef2b164872f5",
@@ -149,7 +156,7 @@
     },
     {
       "id": "lead-16670bf643eec995",
-      "title": "PREFEITURA MUNICIPAL DE JANDIRA EDITAL DE CHAMAMENTO PÚBLICO EMERGENCIAL Nº 003/2026 A Prefeitura Municipal de Jandira, por in - Prefeitura de Jandira",
+      "title": "PREFEITURA MUNICIPAL DE JANDIRA EDITAL DE CHAMAMENTO PÚBLICO EMERGENCIAL Nº 003/2026 A Prefeitura Municipal de Jandira, por in - Jandira",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUTZoZGdxYnQybTYwTmsybER5U0ZFcGJIb1BRUU9iM0NsOUIxMFlTZS1ZNkhSUEhYNjNNbTFscWgzUVZXTkVNTlJOQVFCTzJ4XzNUeWlORUJWSTgtZTQ0aXRubmRNSnA4d1NZb3J0bXJhVjN4V295SjVBd1VzQUVNSXFVZ2UtZ3ZmU3hHV2RBSVRYaHBOTTQzZ0lXSjM1bVJzczJfdi12TmJJQ1N0QjE1VHhsM294WGgwa202enY4V0lzZ3RKVklzdVpVcldYS0VwMlNHd2xjMDN6aWxjcVZjUw?oc=5",
       "published": "2026-11-25",
       "source": "https://apisite.jandira.sp.gov.br"
@@ -188,13 +195,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTFJaTVN2SzREdTZELTlXSGlIV2J0UWVtWEhSOE5rZGwzWmt5SWFRdG5aOUlBcERsT2lpMS1nM1lRbzgtMkZwTHJYdHlSVUwxN3pEQjBlNE54WGlOR2pCc1gweEthbUF5Y0FBNlBzNFVZV3h5bnl6dnlfZ212bzVhQlZUMTlzQktHaEZNNmhuT0pETks3cFdXWXM4bFpzaTRvbE16Y1ZpLVQ2WXFGYS1BRDVEUjdRM19xc3hJRlJpckNOUQ?oc=5",
       "published": "2026-11-24",
       "source": "https://cdn.cebraspe.org.br"
-    },
-    {
-      "id": "lead-12047a77633d08a7",
-      "title": "Mesa Diretora homologa resultado do II Concurso Público da ALEMS - Assembleia Legislativa de Mato Grosso do Sul",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZ2N4VWFOTWItUHpsbDlfaHptZ0U5TDZtMjFMUUpOWW5VQ0prUWs1c0FaQ29tN2VjT0NLeUFfLV95c2w3c0J1dW1jd3h5UFVyNml6X0wzQkdRbmF5NDFPYVNDQWNaSjBrdHNORXdKRlBicGY0OXpWREY4X09VbWU3NG5WTU1zb1AxOE04a1BxYm1QUmpXdkg0T19SZEhNaUtnZ1E4?oc=5",
-      "published": "2026-11-24",
-      "source": "https://al.ms.gov.br"
     }
   ]
 }
