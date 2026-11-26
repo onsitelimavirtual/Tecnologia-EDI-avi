@@ -1,1 +1,49 @@
-
+name: Atualizar oportunidades e executar QA de integridade
+on:
+  schedule:
+    # 06h17 e 18h17 no horário de Brasília (UTC-3). O GitHub pode atrasar a fila.
+    - cron: '17 9,21 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: painel-oportunidades-atualizacao
+  cancel-in-progress: false
+jobs:
+  atualizar-validar-publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Executar testes unitários dos motores de atualização e QA
+        run: node --test tests/*.test.mjs
+      - name: Atualizar referências de emprego
+        run: node scripts/atualizar.mjs
+      - name: Atualizar catálogo curado e descobrir notícias de concursos
+        run: node scripts/atualizar-concursos.mjs
+      - name: Executar motor de QA de integridade
+        id: qa
+        run: node scripts/qa-integridade.mjs
+      - name: Publicar somente catálogos aprovados pelo QA
+        if: steps.qa.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html data/atualizacoes.json data/concursos.json data/qa-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: atualizar oportunidades e relatório QA'
+            git push
+          fi
+      - name: Arquivar relatório QA para auditoria
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painel-oportunidades-qa-${{ github.run_number }}
+          path: data/qa-status.json
+          if-no-files-found: ignore
+          retention-days: 30
