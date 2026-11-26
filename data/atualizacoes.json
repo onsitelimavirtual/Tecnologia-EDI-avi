@@ -1,11 +1,23 @@
 {
-  "generatedAt": "2026-11-26T21:42:32.496Z",
+  "generatedAt": "2026-11-26T21:43:06.714Z",
   "status": "ok",
   "provider": "Google Notícias RSS (índice intermediário; não API oficial do Correio)",
   "coverage": "Apenas manchetes indexadas. Não há confirmação de inscrição aberta ou cobertura completa.",
   "feedsConsulted": 3,
   "feedsSucceeded": 3,
   "records": [
+    {
+      "id": "auto-18b8cd26ba5189a3cc32",
+      "title": "Grupo Bora Brasil abre inscrições para Programa Trainee 2027",
+      "type": "Trainee",
+      "source": "CorreioWeb",
+      "location": "Não informada",
+      "published": "2026-11-26",
+      "deadline": "",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNUER6QzNiZlNtb3A4U3dQNUx0Y1JySTlaWDlldjZGb21GWXNkWkZkei10Z1lyTHd5R1NfSmR5QVdSc2FkNzFLanFDX1cxWTRhVEJaRFBYWVNSdHFxSjNXT3hQMEVYa2RSOUlpRFFhWHhJWnNQd2ZLTHh2NlFUVGt5cmpIaVZiWTFvNzc5Y2NGTVQxanoyTTc2Qnp4SkZtZEJiQzBvd29mWjdLMWlTSGpJa05BZDV0dnQ3SWNkRXlKaFpTb1ptSHdsZQ?oc=5",
+      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
+      "origin": "automatico"
+    },
     {
       "id": "auto-7630e6acdc67e852e26a",
       "title": "GOL abre inscrições para Programa Jovem Aprendiz",
