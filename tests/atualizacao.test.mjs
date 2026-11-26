@@ -10,7 +10,7 @@ import { validateContest, dueStatus, parseLeads } from '../scripts/atualizar-con
 const now = new Date('2026-11-25T12:00:00.000Z');
 const quietLog = { info() {}, error() {}, warn() {} };
 
-function jobFeed({ sourceUrl = 'https://www.correiobraziliense.com.br', title = 'Vagas de emprego em TI - Correio Braziliense', pubDate = 'Tue, 24 Nov 2026 10:00:00 GMT' } = {}) {
+function jobFeed({ sourceUrl = 'https://www.correiobraziliense.com.br', title = 'Agências do trabalhador oferecem 555 vagas de emprego - Correio Braziliense', pubDate = 'Tue, 24 Nov 2026 10:00:00 GMT' } = {}) {
   return `<rss version="2.0"><channel><item>
     <title>${title}</title>
     <link>https://news.google.com/rss/articles/job-123</link>
@@ -38,9 +38,40 @@ test('indexa uma manchete de emprego apenas quando fonte e data são válidas', 
     host: 'correiobraziliense.com.br'
   }, now);
   assert.equal(records.length, 1);
-  assert.equal(records[0].title, 'Vagas de emprego em TI');
+  assert.equal(records[0].title, 'Agências do trabalhador oferecem 555 vagas de emprego');
   assert.equal(records[0].type, 'Emprego');
   assert.equal(records[0].origin, 'automatico');
+});
+
+test('filtra notícias de cursos, concursos, eventos e temas sem contratação', () => {
+  const irrelevant = [
+    'Aulão gratuito de IA e nuvem no IFB abre 50 vagas',
+    'Cofen abre concurso com 450 vagas e salários elevados',
+    'Vestibular oferece 28 vagas em Letras Italiano',
+    'DF abre vagas gratuitas para castrar cães e gatos',
+    'Sedet oferece vagas para cursos de qualificação profissional',
+    '98% das empresas têm dificuldade para contratar em tecnologia',
+    'Pan de Lima oferece vagas diretas para Jogos Olímpicos'
+  ];
+  for (const title of irrelevant) {
+    const records = extractReferences(jobFeed({ title }), {
+      source: 'Correio Braziliense',
+      host: 'correiobraziliense.com.br'
+    }, now);
+    assert.equal(records.length, 0, `Título indevidamente indexado: ${title}`);
+  }
+});
+
+test('mantém anúncios diretos de contratação em classificados', () => {
+  const records = extractReferences(jobFeed({
+    sourceUrl: 'https://www.classificadoscb.com.br',
+    title: 'Contrata-se Auxiliar Financeiro C/'
+  }), {
+    source: 'Classificados CB',
+    host: 'classificadoscb.com.br'
+  }, now);
+  assert.equal(records.length, 1);
+  assert.equal(records[0].title, 'Contrata-se Auxiliar Financeiro C/');
 });
 
 test('não atribui uma manchete a um portal cuja origem não corresponde', () => {
@@ -51,7 +82,7 @@ test('não atribui uma manchete a um portal cuja origem não corresponde', () =>
   assert.equal(records.length, 0);
 });
 
-test('descarta referências de emprego fora da janela de 45 dias', () => {
+test('descarta referências de emprego fora da janela de 14 dias', () => {
   const records = extractReferences(jobFeed({ pubDate: 'Wed, 30 Sep 2026 10:00:00 GMT' }), {
     source: 'Correio Braziliense',
     host: 'correiobraziliense.com.br'
