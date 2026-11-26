@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T02:23:47.923Z",
+  "generatedAt": "2026-11-26T02:26:00.954Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -162,6 +162,13 @@
       "source": "https://cruzdoespiritosanto.pb.gov.br"
     },
     {
+      "id": "lead-20afbcaa76640526",
+      "title": "Sonora: Marco Aurélio Nalon - Instituto de Pesquisas Ambientais de SP abre inscrições de concurso público para 98 vagas - agenciasp.sp.gov.br",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPWHd3cWZ3NFFlWVpoTVF6VG1RLXc1b19rMFVSRW1DX0FGaS1jZEpYUVNmRVpSMGNGZ3pqVlJwcTBwNi1EdjJyQXdpTjZsSlZMbDMzVk5ycnY5bTRYU2xxQTc1SldMVUxmNFdlTHZPdHdoeFF5ekZYSVB5TVJ0WjhaZHR5VkVIdUsxVGZRSHhhY3g4TVJZb09sZWJYaksydnYxMnBFRUhPb0JsdnJUcDJDMS1xTjg3X29tbzRPY28tMjdWT1h0ZUxFSklBX3JmNWFwd2JYeDRHelVmSHBPcDJnSzFwNVdld1ZPTUxGVk5R?oc=5",
+      "published": "2026-11-24",
+      "source": "https://www.agenciasp.sp.gov.br"
+    },
+    {
       "id": "lead-6d3d85222a4992f7",
       "title": "MINISTÉRIO DO EMPREENDEDORISMO, DA MICROEMPRESA E DA EMPRESA DE PEQUENO PORTE Gabinete do Ministro EDITAL Nº 35/2026 EXAME DE - UnB",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVm5yQ0FiTF9yMTA3a3RhZzJvY3dVMWhyNjJteEFGb25lQ21CRklDMmozR2V5MDBTOER4V2s0Sy1zZnBfdm9qdXdoNE5GUENnSlU2dHdjaGFnX2xOM3RLMG9zdWljTExxRUpnZWl2SXNXcnJxWXM1MW1GRXBkMGVUX25hd19zRFVQX21jYjVEcTF3TlI2RHZpVjFEYmwzZER3MnNHb2ZodkZGLXJqRVdULUUzMlFuSWdrdW1uOWljdXJkelFVczFJcHVpU2t3MjdhWHdV?oc=5",
@@ -188,13 +195,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUzl0aFJJMmNsNmR2YXlKVG9nZ0o1WXEtdlMxTXh4YmNjTm56UTluc3F0WFFqTkJrM3l6UkhIOFMxQllRa3ZTZEJKTDRTdjM5ZDRma2RsWjJycXIwNEdSTWhwZWpBV09fMlZBOEtNaEI0T0NuUmlQTUFQb3hMVF9QdjRxRGFsOXpGM3BZYnRpLWZuek5yc1FBWVBPX0hPbGVaVjFYRkw1X0R2U1ByTDZqQzk2WkRsMUxnQWI1LTQ2RnE?oc=5",
       "published": "2026-11-23",
       "source": "https://www.itupeva.sp.gov.br"
-    },
-    {
-      "id": "lead-81315e85da4b07e0",
-      "title": "Prefeitura de Sete Barras abre Concurso Público com 42 vagas e salários de até R$ 6,4 mil - Prefeitura de Sete Barras/SP",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4tUTdXc2c1Zk9oSldncUJPRGlMckN2cFhjVzFWcEM5Y0xnMVl2YXY5TUY1eG9zQWY1UFEzMzVJSmlEbkszMTRwWngwRmRaY1lWTTRB?oc=5",
-      "published": "2026-11-23",
-      "source": "https://setebarras.sp.gov.br"
     }
   ]
 }

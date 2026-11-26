@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-26T02:23:47.056Z",
+  "generatedAt": "2026-11-26T02:26:00.045Z",
   "status": "ok",
   "provider": "Google Notícias RSS (índice intermediário; não API oficial do Correio)",
   "coverage": "Apenas manchetes indexadas. Não há confirmação de inscrição aberta ou cobertura completa.",
@@ -315,30 +315,6 @@
       "published": "2026-11-16",
       "deadline": "",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBuX1QtWGFQM19LUWhtM2dvWXdLMDJncHk3YVBQUWladTBYZ3FNTlJROU5oS3pPeUxZYmRMUHdJNkF5MUdFYXhMdllRZ3pSUi11XzRWRVNXU3BWQkRwckJkT3k5S0ZyZUxqeF9oOA?oc=5",
-      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
-      "origin": "automatico"
-    },
-    {
-      "id": "auto-2413b3a3ca9749fb624d",
-      "title": "SLB é contratada pela Vår Energi para fornecer serviços integrados de perfuração na costa da Noruega",
-      "type": "Emprego",
-      "source": "CorreioWeb",
-      "location": "Não informada",
-      "published": "2026-11-12",
-      "deadline": "",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxObHB5U2VRR0NRMm9NMTFxZkZLbDlRS3JDVmpzdW5VQ0tIUVdsdFhHWlp4eXhZWG5EQ2JHcG5jOHluZjFWRm1UZUlBN29pZkEwb19oQmJ6aUpvcFd3SkxrOVptbk14SE9sS1BDUGNmMUpJWDYySmFoVE9FTUJHcEU0U3RiQmlNYlBVbk1ua2FGMWxybU5PSUl1WkZGRmRUN3FiMC1vOXZiS082MVlGbGtERThIYndxRi1rNDRHZlFod2dTWWF4OTZXbDZxVEwwMkNmZmlycE9STzhfTWlNRXdEaXZ1YVRRMlJGRF9ha0tpblhaRTBoSFBCNDQxWjJXUQ?oc=5",
-      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
-      "origin": "automatico"
-    },
-    {
-      "id": "auto-39b3986d69abaef1c05f",
-      "title": "Grupo Salta Educação abre vagas para programa de estágio",
-      "type": "Estágio",
-      "source": "CorreioWeb",
-      "location": "Não informada",
-      "published": "2026-11-12",
-      "deadline": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMS1sNmxoVTdhanJuOE1pUk5YYUd3emtmRE1HdjJGMXV0Q2g3QWYtUng2akwwLVk3RkhnVGhXdlhXdUxMVFRndm10WnJUY20wQmpBeGF6NW95alNQYkJhY1hRbVJUWkE0VTh4OUJleTYwdU1EOWxFQ0M1U1hKV1NKcTVreVZTWHo3ekhEMW5fQVcxRmtncTZpYWt4ZW1Fa3ZVZzduSXlzWXhhVHQxQ3VvTVd0Z1lmQTRZeHN5WHd6cWpsMjQ?oc=5",
       "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
       "origin": "automatico"
     }
