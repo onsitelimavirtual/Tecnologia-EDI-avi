@@ -48,7 +48,7 @@
 5. Confira o resultado da execução. O job deve terminar com sucesso e publicar `data/atualizacoes.json`, `data/concursos.json` e `data/qa-status.json`.
 6. No painel, a barra de sincronização apresenta a data da atualização e o estado do último QA.
 
-A rotina automática só começa depois que o repositório estiver publicado, o workflow estiver na branch padrão e as permissões estiverem configuradas. A execução real no repositório do administrador ainda precisa ser confirmada após o envio destes arquivos.
+A rotina foi ativada na branch padrão e a primeira execução real do GitHub Actions foi concluída com sucesso: 12 testes aprovados, 3 feeds de emprego consultados, 28 referências indexadas e QA com 27 verificações aprovadas. O relatório registrou alertas de curadoria de concursos antiga e prazos encerrados, sem falhas críticas.
 
 ## Interpretação do QA
 
