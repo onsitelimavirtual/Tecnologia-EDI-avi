@@ -43,8 +43,7 @@ jobs:
           git add index.html data/atualizacoes.json data/concursos.json data/qa-status.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: atualizar oportunidades e relatório QA'
-            git fetch origin "$GITHUB_REF_NAME"
-            git rebase "origin/$GITHUB_REF_NAME"
+            git pull --rebase origin "$GITHUB_REF_NAME"
             git push origin "HEAD:$GITHUB_REF_NAME"
           fi
       - name: Arquivar relatório QA para auditoria
