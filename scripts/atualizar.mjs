@@ -48,10 +48,10 @@ function category(title) {
 }
 function likelyOpportunity(title) {
   const t=normalizeText(title);
-  const excluded = /\\b(aulao|cursos?|qualificacao|vestibular|castrar|castracao|caes|gatos|concursos?|certames?|aposentadoria|emprego e renda|indice de emprego|desenvolvimento|entrevistas?|gravidez|planejamento familiar|jornada reduzida|lei do estagio|olimpic[oa]s?|pan de lima|contratada pela|contratado pela|contratada para fornecer)\\b/;
+  const excluded = /\b(aulao|cursos?|qualificacao|vestibular|castrar|castracao|caes|gatos|concursos?|certames?|aposentadoria|emprego e renda|indice de emprego|desenvolvimento|entrevistas?|gravidez|planejamento familiar|jornada reduzida|lei do estagio|olimpic[oa]s?|pan de lima|contratada pela|contratado pela|contratada para fornecer)\b/;
   if (excluded.test(t)) return false;
-  const opportunity = /\\b(vagas?|empregos?|estagios?|estagiari[oa]s?|trainee|aprendi[zc]|recenseador|contrata-se)\\b/;
-  const hiringAction = /\\b(abre|abrem|abriu|abertas?|aberto|abertos|oferece|oferecem|disponibiliza|disponibilizam|tem|esta com|estao com|selecao|processo seletivo|recrutamento|contrata-se|contratando|contrata)\\b/;
+  const opportunity = /\b(vagas?|empregos?|estagios?|estagiari[oa]s?|trainee|aprendi[zc]|recenseador|contrata-se)\b/;
+  const hiringAction = /\b(abre|abrem|abriu|abertas?|aberto|abertos|oferece|oferecem|disponibiliza|disponibilizam|tem|esta com|estao com|selecao|processo seletivo|recrutamento|contrata-se|contratando|contrata)\b/;
   return opportunity.test(t) && hiringAction.test(t);
 }
 function expectedHost(raw,host) {
