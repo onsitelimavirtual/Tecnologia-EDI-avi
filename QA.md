@@ -1,69 +1,106 @@
-# Relatório de QA — Painel de Oportunidades de Emprego v4.3.3
+# Relatório de QA — Painel de Oportunidades de Emprego v4.4.0
 
-## Diagnóstico da falha de atualização
+**Responsável pelo projeto:** Nailson Rodrigues de Lima  
+**Branch:** `portfoliolimavirtual`  
+**Data da validação:** 26/11/2026  
+**Execução de CI:** [GitHub Actions — testes, atualização e QA](https://github.com/onsitelimavirtual/painel-de-oportunidades/actions/runs/45827135244)
 
-A interface consultava `./data/atualizacoes.json`, enquanto o arquivo publicado estava na raiz do repositório. Os motores também calculavam a raiz do projeto como diretório pai de `scripts/`, mas estavam armazenados na raiz. O workflow estava fora do diretório reconhecido pelo GitHub Actions (`.github/workflows/`).
+## 1. Escopo da versão 4.4.0
 
-Essa divergência impedia a leitura do catálogo e a execução da rotina agendada. A mensagem exibida no navegador era genérica, mas os registros locais permaneciam preservados.
+A versão 4.4.0 amplia o painel de consulta de oportunidades com um portal editorial de orientação profissional, mantendo os módulos existentes de vagas, concursos, favoritos, fontes, indicadores e projetos autorais.
 
-## Métrica de acessos — versão 4.3.3\n\n- Cartão agregado **Acessos à página** inserido nos indicadores do painel.\n- Conta carregamentos da página publicada por meio da API pública do CounterAPI, com namespace e chave fixos.\n- A contagem inicia na ativação; não recupera visualizações históricas e não representa visitantes únicos.\n- O código do painel não envia nome, e-mail, localização ou identificadores de usuário. O provedor declara anonimizar IP e dados do navegador por hashes; por ser um serviço externo, a contagem é aproximada e sujeita às limitações do provedor.\n- Se a API falhar, a interface apresenta indisponibilidade e mantém o restante do painel funcional.\n\n## Correções implementadas
+Foram incorporados:
 
-- Catálogos colocados em `data/`, no mesmo caminho consumido pela interface, pelos scripts e pelo QA.
-- Motores colocados em `scripts/`, com os caminhos relativos já previstos no código.
-- Workflow colocado em `.github/workflows/atualizar-vagas.yml`.
-- Workflow configurado para executar após mudanças nos scripts, testes, curadoria ou no próprio workflow; também mantém agenda diária às 06h17 e 18h17 (Brasília) e acionamento manual.
-- Testes Node.js adicionados para parser RSS, domínios, datas, prazos, descoberta de concursos, preservação do catálogo em falha total e atualização parcial.
-- Consulta do navegador agora tem limite de 12 segundos e exibe o motivo técnico resumido em caso de erro.
-- Nenhum dado pessoal de candidato é coletado. Manchetes de notícias permanecem referências, não confirmação de vaga aberta ou edital vigente.
+- Recomendações para pesquisa de vagas, leitura de requisitos e organização das candidaturas.
+- Orientações de currículo, apresentação de competências e proteção de dados pessoais.
+- Dicas para entrevistas presenciais e on-line.
+- Estrutura STAR para organizar respostas baseadas em experiências reais.
+- Orientações para quem ainda não possui experiência profissional formal.
+- Técnicas de estudo com prática de recuperação, revisão espaçada, resolução de questões e registro de erros.
+- Recomendações específicas para preparação para concursos a partir do edital oficial.
+- Plano semanal adaptável, perguntas frequentes e fontes públicas de aprofundamento.
+- Navegação responsiva com acesso direto à seção Preparação.
+- Atualização do título, descrição da página, versão e caminho do favicon.
 
-## Testes automatizados incluídos
+O guia é informativo. Não promete contratação, não confirma a disponibilidade de vagas e não substitui editais ou instruções oficiais.
 
-Arquivo: `tests/atualizacao.test.mjs`.
+## 2. Testes automatizados
 
-A suíte contém 16 testes unitários. Ela deve ser executada pelo workflow com:
+Arquivo principal: `tests/atualizacao.test.mjs`.
+
+**Resultado: 17 testes aprovados, 0 falhas.**
+
+A suíte cobre, entre outros pontos:
+
+- Decodificação e filtragem de referências RSS.
+- Validação de domínios, datas, concursos e prazos.
+- Preservação do catálogo quando todas as fontes falham.
+- Atualização parcial quando pelo menos uma fonte responde.
+- Presença e configuração do contador de acessos.
+- Presença da seção de orientação profissional, navegação, conteúdo de entrevistas, estudos, referências e favicon.
+
+Execução usada pelo workflow:
 
 ```bash
 node --test tests/*.test.mjs
 ```
 
-A validação da versão 4.3.3 foi concluída pelo GitHub Actions em 26/11/2026, com 16 testes aprovados e 28 verificações de QA aprovadas.
+## 3. QA de integridade
 
-## Critérios de publicação
+**Resultado: 28/28 verificações aprovadas, 0 falhas críticas e 3 alertas não críticos.**
 
-1. As fontes de emprego precisam ter pelo menos uma resposta bem-sucedida; se todas falharem, o catálogo anterior não é sobrescrito.
-2. A curadoria de concursos precisa permanecer coerente com o catálogo público e com o fallback offline.
-3. O QA valida estrutura, domínios, datas, duplicidades, consistência e anúncios autorais.
-4. Uma falha crítica impede o commit dos catálogos gerados.
-5. Alertas de curadoria antiga, prazos encerrados ou feeds parciais são registrados como avisos, não como prova de inscrições abertas.
+Métricas registradas em `data/qa-status.json`:
 
-## Limitações mantidas
+| Indicador | Resultado |
+|---|---:|
+| Referências de emprego | 10 |
+| Registros de concursos na curadoria | 5 |
+| Concursos com inscrição dentro do período verificado | 0 |
+| Concursos com prazo informado encerrado | 5 |
+| Projetos autorais habilitados | 0 |
+| Verificações de QA aprovadas | 28/28 |
+| Falhas críticas | 0 |
+| Alertas | 3 |
 
-- Google Notícias RSS é índice intermediário, não API oficial dos jornais ou das bancas.
-- A descoberta automática não transforma manchetes em vagas confirmadas nem altera prazos de editais.
-- A curadoria de concursos fornecida permanece datada de 15/10/2026 e contém prazos que precisam de conferência humana. O sistema não inventa reabertura nem prorrogação.
-- O teste automatizado não substitui a validação do resultado publicado no GitHub Pages nem o teste físico em Android.
+### Alertas que exigem revisão humana
 
-## Validação da versão 4.3.3 — métrica de acessos
+1. **Curadoria antiga:** última conferência humana registrada em 15/10/2026; na execução de 26/11/2026, havia 42 dias sem revisão.
+2. **Nenhuma inscrição vigente:** nenhum dos cinco registros possuía prazo de inscrição dentro do período informado na execução.
+3. **Prazos encerrados:** os cinco registros são exibidos como encerrados, não como oportunidades abertas.
 
-**Execução concluída em 26/11/2026, às 02h30 UTC.**
+Esses alertas não impedem a publicação, mas a seção de concursos deve ser revisada manualmente antes de divulgar qualquer edital como vigente. Não se deve presumir prorrogação, reabertura ou cancelamento sem fonte oficial.
 
-- Testes automatizados: **16 aprovados, 0 falhas**.
-- QA de integridade: **28 de 28 verificações aprovadas**, sem falhas críticas; os três alertas já conhecidos de curadoria e prazos de concursos permanecem.
-- Publicação dos catálogos: concluída com sucesso.
-- Build e deploy do GitHub Pages: concluídos com sucesso.
-- Indicador de acessos: cartão presente no HTML publicado, com namespace e chave fixos do CounterAPI e tratamento de indisponibilidade.
+## 4. Atualização e publicação
 
-O total é iniciado na ativação do contador e aumenta a cada visualização contabilizada da página publicada. O valor depende da resposta do serviço externo no navegador do visitante; não é uma métrica de pessoas únicas nem um registro antifraude.
+A execução do workflow `Atualizar oportunidades e executar QA de integridade` concluiu com sucesso:
 
-## Estado da última execução antes da métrica v4.3.3
+- Testes automatizados: sucesso.
+- Atualização de referências de emprego: sucesso.
+- Atualização do catálogo curado e descoberta de notícias: sucesso.
+- Motor de QA: sucesso, com 28 verificações aprovadas e 3 alertas.
+- Publicação dos catálogos aprovados: sucesso.
 
-**Execução concluída em 26/11/2026, às 02h27 UTC.**
+O workflow de GitHub Pages associado à atualização teve o build concluído com sucesso. O estado do deploy deve ser conferido na execução correspondente antes de afirmar que o novo conteúdo já está visível em todos os pontos de acesso.
 
-- Testes Node.js: **15 aprovados, 0 falhas na execução anterior à inclusão da métrica de acessos**.
-- Atualização de empregos: **3 de 3 feeds responderam**; 10 referências permaneceram após filtros de relevância e janela de 14 dias.
-- Concursos: 5 registros permanecem na curadoria oficial e 16 manchetes foram coletadas para revisão humana.
-- QA: **27 de 27 verificações aprovadas na execução anterior à inclusão da métrica de acessos**, sem falhas críticas e com 3 alertas de curadoria/prazos.
-- Publicação dos catálogos: concluída com sucesso.
-- GitHub Pages: build e deploy concluídos com sucesso.
+## 5. Fontes públicas incluídas no portal
 
-A rotina está habilitada para execução agendada às 06h17 e 18h17 (Brasília). O botão do painel consulta o último catálogo publicado; a coleta externa é feita pelo GitHub Actions. As manchetes de concursos não são editais confirmados e os cinco registros curados possuem prazos informados encerrados, exigindo revisão humana antes de qualquer divulgação como oportunidade aberta.
+- [Superintendência de Carreiras do Centro Paula Souza — preparação para entrevistas](https://carreiras.cps.sp.gov.br/como-se-preparar-para-uma-entrevista-de-emprego-6-dicas-para-se-destacar/).
+- [Ministério do Trabalho e Emprego — buscar emprego no SINE](https://www.gov.br/pt-br/servicos/buscar-emprego-no-sistema-nacional-de-emprego-sine).
+- [Boletim do Instituto de Saúde — estratégias de aprendizado e prática de estudo espaçado](https://periodicos.saude.sp.gov.br/bis/article/view/39874).
+- [EduCapes — Manual de Técnicas e Organização de Estudo](https://educapes.capes.gov.br/handle/capes/744814).
+
+Os links foram conferidos durante a implementação. O conteúdo do portal foi redigido como orientação geral e não reproduz integralmente os materiais referenciados.
+
+## 6. Limitações e próximos controles
+
+- Não há suíte E2E de navegador nesta versão; o CI não substitui teste visual em aparelhos Android e desktop.
+- Não foi executada auditoria formal WCAG nem teste com leitor de tela.
+- O QA valida a consistência estrutural dos catálogos, mas não confirma em linguagem natural cada vaga, retificação ou edital.
+- O RSS do Google Notícias é fonte intermediária de descoberta, não API oficial das empresas, jornais ou bancas.
+- A disponibilidade de cada oportunidade deve ser conferida no anúncio original.
+- A curadoria de concursos precisa de revisão humana para que o painel volte a apresentar editais com prazos vigentes.
+- A aprovação do Google AdSense é um processo separado da integridade técnica e da publicação do site.
+
+## 7. Histórico resumido
+
+A versão 4.3.3 incorporou o contador agregado de visualizações. As versões 4.3.1 e 4.3.2 corrigiram problemas de navegação móvel, organização dos caminhos de arquivos, atualização agendada e QA. A versão 4.4.0 acrescenta o portal de orientação profissional e sua verificação automatizada.
