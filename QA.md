@@ -80,7 +80,7 @@ A execução do workflow `Atualizar oportunidades e executar QA de integridade` 
 - Motor de QA: sucesso, com 28 verificações aprovadas e 3 alertas.
 - Publicação dos catálogos aprovados: sucesso.
 
-O workflow de GitHub Pages associado à atualização teve o build concluído com sucesso. O estado do deploy deve ser conferido na execução correspondente antes de afirmar que o novo conteúdo já está visível em todos os pontos de acesso.
+O build e o deploy do GitHub Pages foram concluídos com sucesso na execução [pages build and deployment](https://github.com/onsitelimavirtual/painel-de-oportunidades/actions/runs/45827386965). A publicação no GitHub Pages foi confirmada pelo resultado bem-sucedido do workflow; a disponibilidade do domínio personalizado ainda depende da propagação DNS e da configuração HTTPS.
 
 ## 5. Fontes públicas incluídas no portal
 
