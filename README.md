@@ -1,7 +1,16 @@
-# Painel de Oportunidades de Emprego — Versão 4.3.1
+# Painel de Oportunidades de Emprego — Versão 4.3.2
 
 **Projeto autoral: Nailson Rodrigues de Lima.** Aplicação web para organizar referências de oportunidades de emprego, concursos públicos e divulgação gratuita de softwares autorais no rodapé.
 
+
+## Correção 4.3.2 — integração da atualização
+
+- Reorganizados os arquivos nas pastas que o próprio sistema já espera: `data/`, `scripts/` e `.github/workflows/`.
+- Corrigida a causa do erro de consulta: a interface procurava `data/atualizacoes.json`, mas o catálogo estava publicado na raiz.
+- O workflow agora está em `.github/workflows/atualizar-vagas.yml` e é acionado também quando a estrutura dos motores, testes, curadoria ou o próprio workflow é alterada na branch padrão.
+- Incluída uma suíte Node.js executável pelo GitHub Actions.
+- O botão **Consultar atualizações** relê o último catálogo publicado; a coleta externa é feita pelo GitHub Actions, não diretamente pelo navegador. O painel não incorpora tokens ou segredos no HTML.
+- A consulta no navegador agora tem limite de tempo e informa a causa técnica resumida quando falha.
 
 ## Correção 4.3.1 — Navegação para concursos no celular
 
@@ -21,7 +30,7 @@
 
 ## Como funciona a atualização
 
-1. GitHub Actions inicia o workflow `.github/workflows/atualizar-vagas.yml` nos dois horários diários ou por acionamento manual.
+1. GitHub Actions inicia o workflow `.github/workflows/atualizar-vagas.yml` após mudanças na estrutura de atualização, nos dois horários diários ou por acionamento manual.
 2. `scripts/atualizar.mjs` consulta RSS intermediário do Google Notícias para localizar referências sobre emprego, estágio, trainee e aprendizagem.
 3. `scripts/atualizar-concursos.mjs` mantém os concursos da curadoria oficial e consulta manchetes para revisão. A rotina não altera prazos de editais curados por conta própria.
 4. `scripts/atualizar-concursos.mjs` sincroniza também o catálogo de fallback embutido no `index.html`, para que a consulta offline não fique diferente da curadoria.
@@ -57,7 +66,7 @@ Com Node.js 20 ou superior:
 node --test tests/*.test.mjs
 ```
 
-A suíte Node cobre o parser de feeds, validação da curadoria, preservação de catálogos em falhas, consistência entre arquivos, detecção de duplicidades, URLs inválidas, datas futuras, anúncios autorais incompletos e presença da agenda/etapa QA no workflow.
+A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades, filtragem de feeds por domínio e data, validação de concursos e prazos, descoberta de manchetes oficiais, preservação do catálogo quando todas as fontes falham e atualização parcial quando ao menos uma fonte responde.
 
 Para os testes de interface locais, com Playwright e Chromium instalados:
 

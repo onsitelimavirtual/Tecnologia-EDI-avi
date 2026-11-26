@@ -1,87 +1,48 @@
-# Relatório de QA — Painel de Oportunidades de Emprego v4.3.1
+# Relatório de QA — Painel de Oportunidades de Emprego v4.3.2
 
-**Data de implementação e teste local:** 23/11/2026.  
-**Escopo:** motor de QA de integridade, agendamento duas vezes ao dia, indicador do QA na interface e preservação dos módulos anteriores.
+## Diagnóstico da falha de atualização
 
+A interface consultava `./data/atualizacoes.json`, enquanto o arquivo publicado estava na raiz do repositório. Os motores também calculavam a raiz do projeto como diretório pai de `scripts/`, mas estavam armazenados na raiz. O workflow estava fora do diretório reconhecido pelo GitHub Actions (`.github/workflows/`).
 
-## Hotfix 4.3.1 — botão “Ver concursos em destaque”
+Essa divergência impedia a leitura do catálogo e a execução da rotina agendada. A mensagem exibida no navegador era genérica, mas os registros locais permaneciam preservados.
 
-### Verificações estáticas executadas após o commit
+## Correções implementadas
 
-- Link promocional aponta para `#concursos`.
-- Existe exatamente um destino com `id="concursos"`.
-- Camada decorativa `.promo:after` não captura eventos de ponteiro (`pointer-events: none`).
-- Link promocional está em camada superior (`position: relative; z-index: 2`) e aceita interação touch.
-- Links de navegação para concursos possuem tratamento explícito com `scrollIntoView` e respeitam `prefers-reduced-motion`.
-- Commit aplicado à branch `portfoliolimavirtual`: `6c21bbc8f09d5b00383896b64fad99ad1871a568`.
+- Catálogos colocados em `data/`, no mesmo caminho consumido pela interface, pelos scripts e pelo QA.
+- Motores colocados em `scripts/`, com os caminhos relativos já previstos no código.
+- Workflow colocado em `.github/workflows/atualizar-vagas.yml`.
+- Workflow configurado para executar após mudanças nos scripts, testes, curadoria ou no próprio workflow; também mantém agenda diária às 06h17 e 18h17 (Brasília) e acionamento manual.
+- Testes Node.js adicionados para parser RSS, domínios, datas, prazos, descoberta de concursos, preservação do catálogo em falha total e atualização parcial.
+- Consulta do navegador agora tem limite de 12 segundos e exibe o motivo técnico resumido em caso de erro.
+- Nenhum dado pessoal de candidato é coletado. Manchetes de notícias permanecem referências, não confirmação de vaga aberta ou edital vigente.
 
-**Limitação:** as verificações acima confirmam o código e a ligação entre âncora e destino. Ainda é necessário confirmar o toque no Android físico depois que o GitHub Pages concluir a publicação e o navegador atualizar o cache.
+## Testes automatizados incluídos
 
-## Resultado dos testes executados
+Arquivo: `tests/atualizacao.test.mjs`.
 
-### Testes Node.js
+A suíte contém 11 testes unitários. Ela deve ser executada pelo workflow com:
 
-- **27/27 testes aprovados** com `node --test tests/*.test.mjs`.
-- Oito testes do indexador de referências de emprego.
-- Nove testes de curadoria, descoberta de concursos e sincronização do fallback offline.
-- Dez testes do motor de QA de integridade.
+```bash
+node --test tests/*.test.mjs
+```
 
-Os testes do QA verificam: aprovação de catálogos consistentes; alertas para curadoria antiga e prazos encerrados; bloqueio de URLs inválidas; detecção de IDs/URLs duplicados; divergência entre concursos públicos e curadoria; publicidade habilitada incompleta; timestamp futuro; e ausência de agendamento/QA antes da publicação.
+Os resultados reais da primeira execução serão os exibidos no GitHub Actions. Não se declara aprovação de execução remota antes da conclusão do workflow.
 
-### Testes de interface
+## Critérios de publicação
 
-- **32/32 verificações aprovadas** em Chromium/Playwright por `tests/testar_v4_1.py`, atualizado para a versão 4.3.
-- Conferidos título, identidade, grade de vagas, pesquisa, filtros, favoritos, editor de publicidade, upload de imagem, exportação JSON, ocultação do rodapé, paginação e larguras mobile de 390 px e 320 px.
-- Capturas atualizadas: `captura-desktop.png`, `captura-mobile.png`, `captura-editor.png` e `captura-publicidade-ativa.png`.
+1. As fontes de emprego precisam ter pelo menos uma resposta bem-sucedida; se todas falharem, o catálogo anterior não é sobrescrito.
+2. A curadoria de concursos precisa permanecer coerente com o catálogo público e com o fallback offline.
+3. O QA valida estrutura, domínios, datas, duplicidades, consistência e anúncios autorais.
+4. Uma falha crítica impede o commit dos catálogos gerados.
+5. Alertas de curadoria antiga, prazos encerrados ou feeds parciais são registrados como avisos, não como prova de inscrições abertas.
 
-**Total de testes concluídos e aprovados nesta rodada: 59.** Uma suíte complementar antiga de interface (`tests/ui_v42.py`) excedeu o limite de execução local e não foi contabilizada.
+## Limitações mantidas
 
-## Motor de QA de integridade
+- Google Notícias RSS é índice intermediário, não API oficial dos jornais ou das bancas.
+- A descoberta automática não transforma manchetes em vagas confirmadas nem altera prazos de editais.
+- A curadoria de concursos fornecida permanece datada de 15/10/2026 e contém prazos que precisam de conferência humana. O sistema não inventa reabertura nem prorrogação.
+- O teste automatizado não substitui a validação do resultado publicado no GitHub Pages nem o teste físico em Android.
 
-Arquivo: `scripts/qa-integridade.mjs`.
+## Estado
 
-### Verificações críticas — bloqueiam publicação
-
-- JSON válido e estrutura esperada dos catálogos;
-- geração recente e timestamp sem data futura;
-- status e contadores de feeds coerentes;
-- campos obrigatórios, datas, tipos e fontes permitidas;
-- URLs HTTPS esperadas e domínios de origem permitidos;
-- IDs e URLs duplicados;
-- correspondência exata entre `concursos-curados.json`, `concursos.json` e o fallback de concursos embutido no HTML;
-- manchetes de concursos separadas dos editais curados;
-- anúncios autorais habilitados com nome e descrição, URL segura quando informada e imagem dentro do formato/limite aceito;
-- título oficial do sistema, presença do indicador de QA e agenda de duas execuções diárias;
-- execução do QA antes do commit/push dos catálogos.
-
-### Alertas não bloqueantes
-
-- feed de empregos parcial ou sem referências encontradas;
-- índice de notícias de concursos parcial ou offline;
-- curadoria de concursos com mais de 14 dias sem revisão;
-- ausência de concursos dentro do período informado;
-- concursos cujo prazo informado já terminou.
-
-O status `passed_with_warnings` significa que a estrutura está consistente, mas requer revisão humana. O status `failed` impede a publicação dos catálogos.
-
-## Agenda implementada
-
-Workflow: `.github/workflows/atualizar-vagas.yml`.
-
-- Cron: `17 9,21 * * *` em UTC.
-- Horários equivalentes: **06h17 e 18h17 no horário de Brasília**.
-- `workflow_dispatch` permite execução manual.
-- O workflow executa testes, atualizadores, motor de QA e só então faz commit/push dos catálogos aprovados.
-- Relatório QA é arquivado como artefato da execução para auditoria.
-
-## Limitações e pendências reais
-
-1. **Não houve publicação nem execução real no repositório GitHub do administrador.** A agenda está configurada nos arquivos, mas só passa a operar após upload para a branch padrão, ativação de Actions e permissão `contents: write`.
-2. Os testes dos motores utilizam fixtures/simulações. Não foi confirmada a resposta atual dos feeds externos nesta rodada.
-3. A curadoria de concursos incluída no pacote foi verificada em 15/10/2026. Em 23/11/2026, o QA deve sinalizar que ela está antiga e que os prazos registrados já terminaram. O motor não inventa novos prazos nem presume reabertura.
-4. O QA valida integridade técnica e coerência entre arquivos; não substitui a leitura de editais, retificações, suspensões e cancelamentos em páginas oficiais.
-5. Ainda pendem testes em Android físico, leitores de tela, navegadores antigos e comportamento real do CDN/GitHub Pages após publicação.
-
-## Conclusão
-
-A integração local do motor de QA e a agenda de duas execuções diárias foram implementadas. **A validação automatizada local passou nos 56 testes contabilizados.** A ativação efetiva das atualizações automáticas depende da publicação e da primeira execução do workflow no GitHub do administrador.
+A correção estrutural foi preparada na branch de publicação. A validação definitiva depende da conclusão da primeira execução do workflow após o commit.

@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#071827">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta name="description" content="Painel de Oportunidades de Emprego: organize referências jornalísticas sobre emprego, estágio e aprendizagem, com acesso às fontes originais, concursos públicos e divulgação gratuita de projetos autorais.">
-<title>Painel de Oportunidades de Emprego — v4.3.1</title>
+<title>Painel de Oportunidades de Emprego — v4.3.2</title>
 <style>
 :root{--ink:#101e32;--muted:#63748a;--navy:#091624;--navy2:#10253a;--blue:#095ce4;--cyan:#08c3e2;--line:#e3eaf1;--bg:#f6f8fc;--white:#fff;--focus:#f59c21;--shadow:0 10px 32px rgba(23,44,76,.065)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:3px}button[disabled]{opacity:.55;cursor:wait}.skip{position:absolute;left:-9999px;z-index:100;background:#fff;padding:10px 15px}.skip:focus{left:10px;top:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -304,7 +304,9 @@ async function syncReferences(silent=false){
   if(!silent)status.textContent='Verificando publicações disponíveis…';
   try{
     if(location.protocol==='file:')throw Error('file://');
-    const response=await fetch('./data/atualizacoes.json?ts='+Date.now(),{cache:'no-store'});
+    const requestOptions={cache:'no-store'};
+    if(typeof AbortSignal!=='undefined'&&typeof AbortSignal.timeout==='function')requestOptions.signal=AbortSignal.timeout(12000);
+    const response=await fetch('./data/atualizacoes.json?ts='+Date.now(),requestOptions);
     if(!response.ok)throw Error('HTTP '+response.status);
     const bundle=await response.json();
     if(!bundle||!Array.isArray(bundle.records)||bundle.records.length>180)throw Error('Catálogo inválido');
@@ -346,7 +348,8 @@ async function syncReferences(silent=false){
     time.textContent='Última geração: '+last.toLocaleString('pt-BR');
     if(!silent)showToast(status.textContent);
   }catch(err){
-    status.textContent=location.protocol==='file:'?'Modo arquivo local: para atualizar automaticamente, publique o site e habilite a rotina agendada.':'Não foi possível atualizar agora. Os registros já salvos continuam disponíveis.';
+    const reason=err?.name==='TimeoutError'?'tempo limite excedido':String(err?.message||'falha de rede').slice(0,90);
+    status.textContent=location.protocol==='file:'?'Modo arquivo local: publique o site e habilite a rotina agendada.':`Falha na consulta (${reason}). Os registros já salvos continuam disponíveis.`;
     time.textContent='Sem confirmação de atualização';
     if(!silent)showToast(status.textContent);
   }finally{button.disabled=false}

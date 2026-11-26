@@ -1,5 +1,11 @@
 name: Atualizar oportunidades e executar QA de integridade
 on:
+  push:
+    paths:
+      - '.github/workflows/atualizar-vagas.yml'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'data/concursos-curados.json'
   schedule:
     # 06h17 e 18h17 no horário de Brasília (UTC-3). O GitHub pode atrasar a fila.
     - cron: '17 9,21 * * *'
@@ -12,7 +18,7 @@ concurrency:
 jobs:
   atualizar-validar-publicar:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Baixar projeto
         uses: actions/checkout@v4
