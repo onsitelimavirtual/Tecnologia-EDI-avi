@@ -10,6 +10,7 @@
 - O workflow agora está em `.github/workflows/atualizar-vagas.yml` e é acionado também quando a estrutura dos motores, testes, curadoria ou o próprio workflow é alterada na branch padrão.
 - Incluída uma suíte Node.js executável pelo GitHub Actions e filtros de relevância para excluir manchetes de cursos, vestibulares, concursos, eventos e notícias sem contratação.
 - A janela de validade das referências de emprego foi alinhada ao período de busca de 14 dias, reduzindo a permanência de notícias antigas.
+- Registros antigos preservados só permanecem se também passarem pelos novos filtros de relevância; manchetes sobre cursos, concursos, eventos e temas sem contratação são descartadas.
 - O botão **Consultar atualizações** relê o último catálogo publicado; a coleta externa é feita pelo GitHub Actions, não diretamente pelo navegador. O painel não incorpora tokens ou segredos no HTML.
 - A consulta no navegador agora tem limite de tempo e informa a causa técnica resumida quando falha.
 
