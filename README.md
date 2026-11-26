@@ -73,7 +73,7 @@ O guia apresenta conteúdo informativo original e links de referência. Ele não
 5. Confira o resultado da execução. O job deve terminar com sucesso e publicar `data/atualizacoes.json`, `data/concursos.json` e `data/qa-status.json`.
 6. No painel, a barra de sincronização apresenta a data da atualização e o estado do último QA.
 
-A rotina foi ativada na branch padrão e a primeira execução real do GitHub Actions foi concluída com sucesso: 15 testes aprovados, 3 feeds de emprego consultados, 10 referências filtradas por relevância e atualidade e QA com 27 verificações aprovadas. O relatório registrou alertas de curadoria de concursos antiga e prazos encerrados, sem falhas críticas.
+Na execução de validação da versão 4.4.0, o GitHub Actions concluiu 17 testes sem falhas, consultou 3 feeds, manteve 10 referências de emprego e aprovou 28/28 verificações de QA. Foram registrados 3 alertas não críticos sobre a curadoria de concursos e os prazos de inscrição.
 
 ## Interpretação do QA
 
@@ -91,13 +91,9 @@ Com Node.js 20 ou superior:
 node --test tests/*.test.mjs
 ```
 
-A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades, filtragem de feeds por domínio e data, validação de concursos e prazos, descoberta de manchetes oficiais, preservação do catálogo quando todas as fontes falham, atualização parcial e presença da métrica de acessos.
+A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades, filtragem de feeds por domínio e data, validação de concursos e prazos, descoberta de manchetes oficiais, preservação do catálogo quando todas as fontes falham, atualização parcial, métrica de acessos e presença do portal de orientação profissional com navegação, entrevistas, estudos e referências.
 
-Para os testes de interface locais, com Playwright e Chromium instalados:
-
-```bash
-Não há uma suíte E2E de navegador incluída nesta versão; a validação da interface deve ser complementada por testes manuais em Android, desktop, teclado e leitor de tela.
-```
+Não há uma suíte E2E de navegador nesta versão. A validação visual e de acessibilidade ainda deve ser complementada por testes manuais em Android e desktop, navegação por teclado e leitor de tela.
 
 Os testes usam fixtures e respostas simuladas; não substituem a primeira execução real do GitHub Actions, nem a validação manual em aparelhos físicos e leitores de tela.
 
@@ -125,6 +121,6 @@ A divulgação dos softwares autorais permanece no rodapé e oculta quando não 
 
 - Google Notícias RSS é índice intermediário, não API oficial dos jornais ou das bancas. Pode omitir resultados ou retornar manchetes que não correspondem a inscrições abertas.
 - O QA não navega por cada página oficial para interpretar retificações em linguagem natural.
-- A curadoria inicial de concursos tem data de referência de 15/10/2026. Na data desta versão (23/11/2026), o QA deverá sinalizar a necessidade de revisão e os prazos já encerrados; ele não reabre nem inventa editais.
+- A curadoria de concursos tem data de referência de 15/10/2026. Na execução de 26/11/2026, estava 42 dias sem revisão humana; os cinco registros tinham prazos informados encerrados. O sistema não reabre nem inventa editais.
 - O agendamento depende do GitHub Actions, da branch padrão, das permissões e da disponibilidade da plataforma.
 - Não há coleta de currículos, CPF ou dados de inscrição dos candidatos.
