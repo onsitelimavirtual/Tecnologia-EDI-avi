@@ -9,7 +9,7 @@ on:
   schedule:
     # 06h17 e 18h17 no horário de Brasília (UTC-3). O GitHub pode atrasar a fila.
     - cron: '17 9,21 * * *'
-  workflow_dispatch:
+  workflow_dispatch
 permissions:
   contents: write
 concurrency:
@@ -53,4 +53,20 @@ jobs:
           name: painel-oportunidades-qa-${{ github.run_number }}
           path: data/qa-status.json
           if-no-files-found: ignore
+          retention-days: 30
+      - name: Gerar pacote ZIP da versão
+        id: pacote
+        run: |
+          VERSION="$(sed -n '1s/.*Versão \([0-9][0-9.]*\).*/\1/p' README.md)"
+          test -n "$VERSION"
+          ARCHIVE="painel-de-oportunidades-v${VERSION}.zip"
+          zip -r "$ARCHIVE" . -x ".git/*" "$ARCHIVE"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "archive=$ARCHIVE" >> "$GITHUB_OUTPUT"
+      - name: Disponibilizar pacote ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: painel-de-oportunidades-v${{ steps.pacote.outputs.version }}
+          path: ${{ steps.pacote.outputs.archive }}
+          if-no-files-found: error
           retention-days: 30
