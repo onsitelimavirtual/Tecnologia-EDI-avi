@@ -1,7 +1,21 @@
-# Relatório de QA — Painel de Oportunidades de Emprego v4.3
+# Relatório de QA — Painel de Oportunidades de Emprego v4.3.1
 
 **Data de implementação e teste local:** 23/11/2026.  
 **Escopo:** motor de QA de integridade, agendamento duas vezes ao dia, indicador do QA na interface e preservação dos módulos anteriores.
+
+
+## Hotfix 4.3.1 — botão “Ver concursos em destaque”
+
+### Verificações estáticas executadas após o commit
+
+- Link promocional aponta para `#concursos`.
+- Existe exatamente um destino com `id="concursos"`.
+- Camada decorativa `.promo:after` não captura eventos de ponteiro (`pointer-events: none`).
+- Link promocional está em camada superior (`position: relative; z-index: 2`) e aceita interação touch.
+- Links de navegação para concursos possuem tratamento explícito com `scrollIntoView` e respeitam `prefers-reduced-motion`.
+- Commit aplicado à branch `portfoliolimavirtual`: `6c21bbc8f09d5b00383896b64fad99ad1871a568`.
+
+**Limitação:** as verificações acima confirmam o código e a ligação entre âncora e destino. Ainda é necessário confirmar o toque no Android físico depois que o GitHub Pages concluir a publicação e o navegador atualizar o cache.
 
 ## Resultado dos testes executados
 
