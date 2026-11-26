@@ -20,7 +20,7 @@ Essa divergência impedia a leitura do catálogo e a execução da rotina agenda
 
 Arquivo: `tests/atualizacao.test.mjs`.
 
-A suíte contém 12 testes unitários. Ela deve ser executada pelo workflow com:
+A suíte contém 14 testes unitários. Ela deve ser executada pelo workflow com:
 
 ```bash
 node --test tests/*.test.mjs
@@ -47,10 +47,10 @@ Os resultados reais da primeira execução serão os exibidos no GitHub Actions.
 
 A primeira execução do workflow foi concluída com sucesso em 26/11/2026.
 
-- Testes Node.js: 12 aprovados, 0 falhas.
+- Testes Node.js: 12 aprovados, 0 falhas na primeira execução (antes do reforço dos filtros de relevância).
 - Atualização de empregos: 3 de 3 feeds responderam; 28 referências indexadas.
 - Concursos: 5 registros mantidos na curadoria oficial e 16 manchetes coletadas para revisão humana.
 - QA: 27 de 27 verificações aprovadas, sem falhas críticas e com 3 alertas de curadoria/prazos.
 - Publicação dos catálogos: concluída pelo workflow.
 
-A rotina está habilitada para execução agendada às 06h17 e 18h17 (Brasília). A interface consulta o último catálogo publicado; ela não inicia uma nova coleta externa diretamente do navegador.
+A primeira execução inicial foi aprovada; os testes adicionais de relevância serão executados na próxima execução automática. A rotina está habilitada para execução agendada às 06h17 e 18h17 (Brasília). A interface consulta o último catálogo publicado; ela não inicia uma nova coleta externa diretamente do navegador.
