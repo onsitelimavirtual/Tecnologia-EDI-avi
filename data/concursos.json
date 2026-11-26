@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T02:27:25.276Z",
+  "generatedAt": "2026-11-26T02:27:40.591Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -106,6 +106,13 @@
       "source": "https://www.cofen.gov.br"
     },
     {
+      "id": "lead-8a51d0d110295353",
+      "title": "PREFEITURA DE ORÓS PRORROGA INSCRIÇÕES DO CONCURSO PÚBLICO COM 95 VAGAS - Prefeitura de Orós",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9ickpUVENaNVhjZEZsZlNBSXNLX3puUmtFU3lERnlOU0djNGdJWnFYRDQzc2oyREJvSjZKVVJOUWRCbnpvOExJN1VvbWtSdw?oc=5",
+      "published": "2026-11-25",
+      "source": "https://oros.ce.gov.br"
+    },
+    {
       "id": "lead-c0d3a32c9e843de0",
       "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMHI2RW9STlFRMmZPS1BDSWdqZy1FRjVfbVlGQTNmOVVzWm5RSDZqQzkwbjBSbnpqcFZkSkNCR0RWSUpHMHRpTWgwMWRrWDZ1MjJFeW1GSktqLUpETWVSNGE3eV8xa0JEM18yMFBJeDlCODJoUWV0eHFPUy1adjFzdTFFOVIxWksyU1J4QVlpd3JqVk5VSkVNcGU0bDZDZG9BS0QtQjBFWF9keEp3WGFzYjBzQnNxMkxUOGRFQzV3?oc=5",
@@ -188,13 +195,6 @@
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUzl0aFJJMmNsNmR2YXlKVG9nZ0o1WXEtdlMxTXh4YmNjTm56UTluc3F0WFFqTkJrM3l6UkhIOFMxQllRa3ZTZEJKTDRTdjM5ZDRma2RsWjJycXIwNEdSTWhwZWpBV09fMlZBOEtNaEI0T0NuUmlQTUFQb3hMVF9QdjRxRGFsOXpGM3BZYnRpLWZuek5yc1FBWVBPX0hPbGVaVjFYRkw1X0R2U1ByTDZqQzk2WkRsMUxnQWI1LTQ2RnE?oc=5",
       "published": "2026-11-23",
       "source": "https://www.itupeva.sp.gov.br"
-    },
-    {
-      "id": "lead-cb3259369c78a0d4",
-      "title": "Paulínia abre 500 vagas para castração gratuita de cães e gatos nos dias 28 e 29 de novembro - Prefeitura Municipal de Paulínia - SP",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ19aOEpvdEZoaHJGZzEtb0FoanJQc2I1NWpLbFQ3WnhMMVl4RFdXZDg5amJTbndBWTZJZmw2SEJNcGl2dTVXOGYxeGxxUUxTLUpQRlBQRG45a05PS2ZvM0lVQkFuQm9BN0NmQlVxZk8ta0J3eFk0ZzNDRVdpdG1ScjloVGZ0MG81bjdPc0FEdjFjQzBlZDIyaVY0MnMyQXRYalBTeTdhcVNUbjU1Z3ZGQ2NLQmM0MThHcEdZNFRxWVh1NGFRVG9OYjRfMjVjREwtenVQTmlvdXdIWG1WUC0xWVR3?oc=5",
-      "published": "2026-11-23",
-      "source": "https://www.paulinia.sp.gov.br"
     }
   ]
 }
