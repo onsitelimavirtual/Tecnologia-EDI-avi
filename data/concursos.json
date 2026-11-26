@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T13:14:08.750Z",
+  "generatedAt": "2026-11-26T19:07:52.388Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -85,11 +85,32 @@
   ],
   "leads": [
     {
+      "id": "lead-328b22eb11b50c5d",
+      "title": "Concurso Público nº 001/2026:... - Prefeitura de Iepê",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
+      "published": "2026-11-26",
+      "source": "https://www.iepe.sp.gov.br"
+    },
+    {
+      "id": "lead-b43910f326682b18",
+      "title": "Coren-SP abre inscrições para concurso público com vagas para enfermeiros - Coren-SP",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSzJBU0wwUkhNRW5RSmpQemRhUF9lb2ZmWThJZEFxOGc1amx5Ym1lVUNaWncwSTlubnEwSUlSaUZnMTVqcHZZcWN1SVFob3JGN3AzU0FoZG54U0tZc2Z1R29peG90andJc012T0ZwZkwwbURQb2o2MU1WcVhoTlN0RTVRT2x1dTg5MFVYdEVweHJ3STVsVDNfZmJzWWYtVkZnR05DdnNCQjQ2QWNLUzg4bi1XRVc?oc=5",
+      "published": "2026-11-26",
+      "source": "https://portal.coren-sp.gov.br"
+    },
+    {
       "id": "lead-34115f62c71acd6b",
       "title": "Educação de SP abre inscrições para concurso com 5.000 vagas de professores nesta quinta-feira (26) - www.agenciasp.sp.gov.br",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ZbWdqZ3JwVEZRbVlHaF9vb0lsMzZBNHFYbW1mVTIzN28yMndDaFhDT3l6S3pLaUM3cTVTZ1QxNG5IV1RUbDRNRVljX05TZ2V4b3ltVVhoZzQwV1NtLVN5X0ZzdUctMnlNSVZDdGs1OHF6bmZTZTdr?oc=5",
       "published": "2026-11-26",
       "source": "https://www.agenciasp.sp.gov.br"
+    },
+    {
+      "id": "lead-b10cef2b164872f5",
+      "title": "CONTROLADORIA-GERAL DA UNIÃO (CGU) CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS - UnB",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNSHZnZTFqSUc0am55ZE1SemlkRjhpbmFXT1ZLamgzMzJtVXNtd3VVa0hIaGlRdU5STjQ0UjFSX3gyZGNqNVBRVDhUSDAzMl90QjlRaURzVzhLRWx4RU1MaXBpRkp2WlFzczJ6OWpRam5DWHhGcm5ncl9JZDVEeFNnTHo3LVZ3eFgxSzJIb3NKWmJfZ0t3bVNNWDU1QmxtY2kwaFZiMzRxLUJWQXRkYXBsRnY2RzMxQWFMTjJOZzNsTExRODlWV3c?oc=5",
+      "published": "2026-11-25",
+      "source": "https://cdn.cebraspe.org.br"
     },
     {
       "id": "lead-ff33df5a828970c4",
@@ -128,7 +149,7 @@
     },
     {
       "id": "lead-16670bf643eec995",
-      "title": "PREFEITURA MUNICIPAL DE JANDIRA EDITAL DE CHAMAMENTO PÚBLICO EMERGENCIAL Nº 003/2026 A Prefeitura Municipal de Jandira, por in - Jandira",
+      "title": "PREFEITURA MUNICIPAL DE JANDIRA EDITAL DE CHAMAMENTO PÚBLICO EMERGENCIAL Nº 003/2026 A Prefeitura Municipal de Jandira, por in - Prefeitura de Jandira",
       "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxPUTZoZGdxYnQybTYwTmsybER5U0ZFcGJIb1BRUU9iM0NsOUIxMFlTZS1ZNkhSUEhYNjNNbTFscWgzUVZXTkVNTlJOQVFCTzJ4XzNUeWlORUJWSTgtZTQ0aXRubmRNSnA4d1NZb3J0bXJhVjN4V295SjVBd1VzQUVNSXFVZ2UtZ3ZmU3hHV2RBSVRYaHBOTTQzZ0lXSjM1bVJzczJfdi12TmJJQ1N0QjE1VHhsM294WGgwa202enY4V0lzZ3RKVklzdVpVcldYS0VwMlNHd2xjMDN6aWxjcVZjUw?oc=5",
       "published": "2026-11-25",
       "source": "https://apisite.jandira.sp.gov.br"
@@ -174,27 +195,6 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZ2N4VWFOTWItUHpsbDlfaHptZ0U5TDZtMjFMUUpOWW5VQ0prUWs1c0FaQ29tN2VjT0NLeUFfLV95c2w3c0J1dW1jd3h5UFVyNml6X0wzQkdRbmF5NDFPYVNDQWNaSjBrdHNORXdKRlBicGY0OXpWREY4X09VbWU3NG5WTU1zb1AxOE04a1BxYm1QUmpXdkg0T19SZEhNaUtnZ1E4?oc=5",
       "published": "2026-11-24",
       "source": "https://al.ms.gov.br"
-    },
-    {
-      "id": "lead-8723884dfaac7667",
-      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONXI4eDU2bGg1UDFzbVFlWXlqWWVxVE5uakJ3Y3BRUElzY0dVeTFTdWJxOXZsREpsVVNpTzIyLThEejNIUXpqQlpNdW41WV9GSHkxRnZFQTktTWFJWXFURFNOUHpBZ0NyQTctU3F4Wkdxd2twQ0wyU3p4Y1E1dVBGaXU4aF9Jb0JabFhnWmQtd2YyQWFGVjluaEtNcTAxTVl5VUpDUnR6RktiTFJ6b1VuLUlkMA?oc=5",
-      "published": "2026-11-24",
-      "source": "https://cruzdoespiritosanto.pb.gov.br"
-    },
-    {
-      "id": "lead-f6345b9b63fc1e77",
-      "title": "TRIBUNAL DE CONTAS DA UNIÃO CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA PARA O CARGO DE - UnB",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeTY5TnpwSWZwdmxtbjdsSlFSSFlBQl90TTRWT2xCX1RFYjZmOGZlTkdnTUt3TURBRWVYeWZXX1VNRUxSNU91dV9GSzEzU0lLa0lIV0NFSWNtQzJRQ1JXUnZOU0ZfUGFYakthd2tXd2pTSHRpaUZzNWxTS2RXRE9kVXNhbXhWQlNOYXVReU1uUlM2eDRTNUNjbWJIc2dVS2tOcmdoeHpxZlhKbFdSOVF3WEViY0VzSEpDcFc3Q2FWOWU0SFlDLWc?oc=5",
-      "published": "2026-11-24",
-      "source": "https://cdn.cebraspe.org.br"
-    },
-    {
-      "id": "lead-7e7ec4a940ef382e",
-      "title": "EDITAL Nº 02/2026 DO PROCESSO SELETIVO SIMPLIFICADO – PSS - SEMED A PREFEITURA MUNICIPAL DE PARINTINS, através da Secretaria - Prefeitura de Parintins",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZFVfRDhscG1xanZ6bi0zdVA0ck1zVFJBMmxhY2x0bUtFR2pITi1HVWRNWTlGN1d1dGFaUFNHODRoRVhtUklyRVNMZHpGWkJNc1RIblVwaFE5ZTJTZUw0elNqZTg0UGc2S2RleVNqUENqVGRaWjN6ZXRqTXNvaTRlMlZYb3M?oc=5",
-      "published": "2026-11-24",
-      "source": "https://files.parintins.am.gov.br"
     }
   ]
 }

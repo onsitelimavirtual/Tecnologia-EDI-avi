@@ -1,11 +1,23 @@
 {
-  "generatedAt": "2026-11-26T13:14:08.045Z",
+  "generatedAt": "2026-11-26T19:07:51.750Z",
   "status": "ok",
   "provider": "Google Notícias RSS (índice intermediário; não API oficial do Correio)",
   "coverage": "Apenas manchetes indexadas. Não há confirmação de inscrição aberta ou cobertura completa.",
   "feedsConsulted": 3,
   "feedsSucceeded": 3,
   "records": [
+    {
+      "id": "auto-7630e6acdc67e852e26a",
+      "title": "GOL abre inscrições para Programa Jovem Aprendiz",
+      "type": "Aprendiz",
+      "source": "Correio Braziliense",
+      "location": "Não informada",
+      "published": "2026-11-26",
+      "deadline": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPZ3Z6NHBDQTdUSGR4UXpCeG5zVFhrazl6ZkZoaV85YU93VUFkdl9YMEJDbHlMenRrSUFnR2FvcUp2VWRyTk96RnRqUEJYMzliWk9PcWdONHVvSHdiNjVwMHNwYlJZemNDWlNVeHM0RkVFNkpJbDFnY25FNkNELTdib01OcjE4VlBoVGp5VUlkZTc3c190WXFYSDBtSmhlLTRTcU9HVnE2d2Y3ZG8tVUdSM0o0ajBwOXRmdTMzb2FrTDJIcWVHdjJHeUV6OG1jenFZRUdSa2ZR?oc=5",
+      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
+      "origin": "automatico"
+    },
     {
       "id": "auto-1af0f0998e53870d16f0",
       "title": "Agências do trabalhador oferecem 555 vagas de emprego nesta terça-feira",
