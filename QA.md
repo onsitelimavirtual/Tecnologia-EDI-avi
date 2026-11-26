@@ -43,14 +43,15 @@ Os resultados reais da primeira execução serão os exibidos no GitHub Actions.
 - A curadoria de concursos fornecida permanece datada de 15/10/2026 e contém prazos que precisam de conferência humana. O sistema não inventa reabertura nem prorrogação.
 - O teste automatizado não substitui a validação do resultado publicado no GitHub Pages nem o teste físico em Android.
 
-## Estado
+## Estado da última execução
 
-A primeira execução do workflow foi concluída com sucesso em 26/11/2026.
+**Execução concluída em 26/11/2026, às 02h27 UTC.**
 
-- Testes Node.js: 12 aprovados, 0 falhas na primeira execução (antes do reforço dos filtros de relevância).
-- Atualização de empregos: 3 de 3 feeds responderam; 28 referências indexadas.
-- Concursos: 5 registros mantidos na curadoria oficial e 16 manchetes coletadas para revisão humana.
-- QA: 27 de 27 verificações aprovadas, sem falhas críticas e com 3 alertas de curadoria/prazos.
-- Publicação dos catálogos: concluída pelo workflow.
+- Testes Node.js: **15 aprovados, 0 falhas**.
+- Atualização de empregos: **3 de 3 feeds responderam**; 10 referências permaneceram após filtros de relevância e janela de 14 dias.
+- Concursos: 5 registros permanecem na curadoria oficial e 16 manchetes foram coletadas para revisão humana.
+- QA: **27 de 27 verificações aprovadas**, sem falhas críticas e com 3 alertas de curadoria/prazos.
+- Publicação dos catálogos: concluída com sucesso.
+- GitHub Pages: build e deploy concluídos com sucesso.
 
-A primeira execução com filtros de relevância foi aprovada; a limpeza de registros preservados sem sinal de contratação está coberta por teste adicional. A rotina está habilitada para execução agendada às 06h17 e 18h17 (Brasília). A interface consulta o último catálogo publicado; ela não inicia uma nova coleta externa diretamente do navegador.
+A rotina está habilitada para execução agendada às 06h17 e 18h17 (Brasília). O botão do painel consulta o último catálogo publicado; a coleta externa é feita pelo GitHub Actions. As manchetes de concursos não são editais confirmados e os cinco registros curados possuem prazos informados encerrados, exigindo revisão humana antes de qualquer divulgação como oportunidade aberta.

@@ -7,7 +7,7 @@
 
 - Reorganizados os arquivos nas pastas que o próprio sistema já espera: `data/`, `scripts/` e `.github/workflows/`.
 - Corrigida a causa do erro de consulta: a interface procurava `data/atualizacoes.json`, mas o catálogo estava publicado na raiz.
-- O workflow agora está em `.github/workflows/atualizar-vagas.yml` e é acionado também quando a estrutura dos motores, testes, curadoria ou o próprio workflow é alterada na branch padrão.
+- O workflow agora está em `.github/workflows/atualizar-vagas.yml`, é acionado quando a estrutura dos motores, testes, curadoria ou o próprio workflow é alterada na branch padrão e sincroniza a branch remota antes de publicar os catálogos.
 - Incluída uma suíte Node.js executável pelo GitHub Actions e filtros de relevância para excluir manchetes de cursos, vestibulares, concursos, eventos e notícias sem contratação.
 - A janela de validade das referências de emprego foi alinhada ao período de busca de 14 dias, reduzindo a permanência de notícias antigas.
 - Registros antigos preservados só permanecem se também passarem pelos novos filtros de relevância; manchetes sobre cursos, concursos, eventos e temas sem contratação são descartadas.
@@ -50,7 +50,7 @@
 5. Confira o resultado da execução. O job deve terminar com sucesso e publicar `data/atualizacoes.json`, `data/concursos.json` e `data/qa-status.json`.
 6. No painel, a barra de sincronização apresenta a data da atualização e o estado do último QA.
 
-A rotina foi ativada na branch padrão e a primeira execução real do GitHub Actions foi concluída com sucesso: 12 testes aprovados, 3 feeds de emprego consultados, 28 referências indexadas e QA com 27 verificações aprovadas. O relatório registrou alertas de curadoria de concursos antiga e prazos encerrados, sem falhas críticas.
+A rotina foi ativada na branch padrão e a primeira execução real do GitHub Actions foi concluída com sucesso: 15 testes aprovados, 3 feeds de emprego consultados, 10 referências filtradas por relevância e atualidade e QA com 27 verificações aprovadas. O relatório registrou alertas de curadoria de concursos antiga e prazos encerrados, sem falhas críticas.
 
 ## Interpretação do QA
 
