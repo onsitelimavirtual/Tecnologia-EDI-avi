@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T02:26:00.954Z",
+  "generatedAt": "2026-11-26T02:27:25.276Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -106,18 +106,18 @@
       "source": "https://www.cofen.gov.br"
     },
     {
-      "id": "lead-464c866ea111d67e",
-      "title": "PREFEITURA DE ORÓS PRORROGA INSCRIÇÕES DO CONCURSO PÚBLICO COM 95 VAGAS - Prefeitura de Orós",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGNSSkxzVW8xMzNuYXo1b3NRRXV5N1hCSjhYNUxFT3NhbmhqemdLM29mZHFnVUJHMDRialRkZVh0Qjg4bTJIT0xweU5naExnMTZ2TG9qWXZ2RDg5SHpSWkQ1Rm1ZcGd0LUZUMnBLcm9Qd1JuRDlhX0ZOWFFwTXBNaU0zek9ycTdVa0R5M2RB?oc=5",
-      "published": "2026-11-25",
-      "source": "https://oros.ce.gov.br"
-    },
-    {
       "id": "lead-c0d3a32c9e843de0",
       "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMHI2RW9STlFRMmZPS1BDSWdqZy1FRjVfbVlGQTNmOVVzWm5RSDZqQzkwbjBSbnpqcFZkSkNCR0RWSUpHMHRpTWgwMWRrWDZ1MjJFeW1GSktqLUpETWVSNGE3eV8xa0JEM18yMFBJeDlCODJoUWV0eHFPUy1adjFzdTFFOVIxWksyU1J4QVlpd3JqVk5VSkVNcGU0bDZDZG9BS0QtQjBFWF9keEp3WGFzYjBzQnNxMkxUOGRFQzV3?oc=5",
       "published": "2026-11-25",
       "source": "https://cruzdoespiritosanto.pb.gov.br"
+    },
+    {
+      "id": "lead-464c866ea111d67e",
+      "title": "PREFEITURA DE ORÓS PRORROGA INSCRIÇÕES DO CONCURSO PÚBLICO COM 95 VAGAS - Prefeitura de Orós",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGNSSkxzVW8xMzNuYXo1b3NRRXV5N1hCSjhYNUxFT3NhbmhqemdLM29mZHFnVUJHMDRialRkZVh0Qjg4bTJIT0xweU5naExnMTZ2TG9qWXZ2RDg5SHpSWkQ1Rm1ZcGd0LUZUMnBLcm9Qd1JuRDlhX0ZOWFFwTXBNaU0zek9ycTdVa0R5M2RB?oc=5",
+      "published": "2026-11-25",
+      "source": "https://oros.ce.gov.br"
     },
     {
       "id": "lead-f6345b9b63fc1e77",
@@ -132,6 +132,13 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTFJaTVN2SzREdTZELTlXSGlIV2J0UWVtWEhSOE5rZGwzWmt5SWFRdG5aOUlBcERsT2lpMS1nM1lRbzgtMkZwTHJYdHlSVUwxN3pEQjBlNE54WGlOR2pCc1gweEthbUF5Y0FBNlBzNFVZV3h5bnl6dnlfZ212bzVhQlZUMTlzQktHaEZNNmhuT0pETks3cFdXWXM4bFpzaTRvbE16Y1ZpLVQ2WXFGYS1BRDVEUjdRM19xc3hJRlJpckNOUQ?oc=5",
       "published": "2026-11-24",
       "source": "https://cdn.cebraspe.org.br"
+    },
+    {
+      "id": "lead-8723884dfaac7667",
+      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONXI4eDU2bGg1UDFzbVFlWXlqWWVxVE5uakJ3Y3BRUElzY0dVeTFTdWJxOXZsREpsVVNpTzIyLThEejNIUXpqQlpNdW41WV9GSHkxRnZFQTktTWFJWXFURFNOUHpBZ0NyQTctU3F4Wkdxd2twQ0wyU3p4Y1E1dVBGaXU4aF9Jb0JabFhnWmQtd2YyQWFGVjluaEtNcTAxTVl5VUpDUnR6RktiTFJ6b1VuLUlkMA?oc=5",
+      "published": "2026-11-24",
+      "source": "https://cruzdoespiritosanto.pb.gov.br"
     },
     {
       "id": "lead-7e7ec4a940ef382e",
@@ -155,13 +162,6 @@
       "source": "https://jupia.sc.gov.br"
     },
     {
-      "id": "lead-8723884dfaac7667",
-      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONXI4eDU2bGg1UDFzbVFlWXlqWWVxVE5uakJ3Y3BRUElzY0dVeTFTdWJxOXZsREpsVVNpTzIyLThEejNIUXpqQlpNdW41WV9GSHkxRnZFQTktTWFJWXFURFNOUHpBZ0NyQTctU3F4Wkdxd2twQ0wyU3p4Y1E1dVBGaXU4aF9Jb0JabFhnWmQtd2YyQWFGVjluaEtNcTAxTVl5VUpDUnR6RktiTFJ6b1VuLUlkMA?oc=5",
-      "published": "2026-11-24",
-      "source": "https://cruzdoespiritosanto.pb.gov.br"
-    },
-    {
       "id": "lead-20afbcaa76640526",
       "title": "Sonora: Marco Aurélio Nalon - Instituto de Pesquisas Ambientais de SP abre inscrições de concurso público para 98 vagas - agenciasp.sp.gov.br",
       "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPWHd3cWZ3NFFlWVpoTVF6VG1RLXc1b19rMFVSRW1DX0FGaS1jZEpYUVNmRVpSMGNGZ3pqVlJwcTBwNi1EdjJyQXdpTjZsSlZMbDMzVk5ycnY5bTRYU2xxQTc1SldMVUxmNFdlTHZPdHdoeFF5ekZYSVB5TVJ0WjhaZHR5VkVIdUsxVGZRSHhhY3g4TVJZb09sZWJYaksydnYxMnBFRUhPb0JsdnJUcDJDMS1xTjg3X29tbzRPY28tMjdWT1h0ZUxFSklBX3JmNWFwd2JYeDRHelVmSHBPcDJnSzFwNVdld1ZPTUxGVk5R?oc=5",
@@ -183,18 +183,18 @@
       "source": "https://www.agenciasp.sp.gov.br"
     },
     {
-      "id": "lead-328b22eb11b50c5d",
-      "title": "Concurso Público nº 001/2026: Prefeitura de Iepê abre inscrições - Prefeitura de Iepê",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
-      "published": "2026-11-23",
-      "source": "https://www.iepe.sp.gov.br"
-    },
-    {
       "id": "lead-1f3a8ad5e3367b36",
       "title": "Prefeitura de Itupeva abre concurso público com 79 vagas e salários de até R$ 13,2 mil - Prefeitura de Itupeva",
       "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUzl0aFJJMmNsNmR2YXlKVG9nZ0o1WXEtdlMxTXh4YmNjTm56UTluc3F0WFFqTkJrM3l6UkhIOFMxQllRa3ZTZEJKTDRTdjM5ZDRma2RsWjJycXIwNEdSTWhwZWpBV09fMlZBOEtNaEI0T0NuUmlQTUFQb3hMVF9QdjRxRGFsOXpGM3BZYnRpLWZuek5yc1FBWVBPX0hPbGVaVjFYRkw1X0R2U1ByTDZqQzk2WkRsMUxnQWI1LTQ2RnE?oc=5",
       "published": "2026-11-23",
       "source": "https://www.itupeva.sp.gov.br"
+    },
+    {
+      "id": "lead-cb3259369c78a0d4",
+      "title": "Paulínia abre 500 vagas para castração gratuita de cães e gatos nos dias 28 e 29 de novembro - Prefeitura Municipal de Paulínia - SP",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNQ19aOEpvdEZoaHJGZzEtb0FoanJQc2I1NWpLbFQ3WnhMMVl4RFdXZDg5amJTbndBWTZJZmw2SEJNcGl2dTVXOGYxeGxxUUxTLUpQRlBQRG45a05PS2ZvM0lVQkFuQm9BN0NmQlVxZk8ta0J3eFk0ZzNDRVdpdG1ScjloVGZ0MG81bjdPc0FEdjFjQzBlZDIyaVY0MnMyQXRYalBTeTdhcVNUbjU1Z3ZGQ2NLQmM0MThHcEdZNFRxWVh1NGFRVG9OYjRfMjVjREwtenVQTmlvdXdIWG1WUC0xWVR3?oc=5",
+      "published": "2026-11-23",
+      "source": "https://www.paulinia.sp.gov.br"
     }
   ]
 }
