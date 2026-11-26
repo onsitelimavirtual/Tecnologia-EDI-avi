@@ -1,7 +1,11 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
+  "generatedAt": "2026-11-26T02:23:47.923Z",
+  "status": "curated_schedule",
+  "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
+  "coverage": "Datas da curadoria oficial. Monitoramento de manchetes não é verificação de editais.",
   "records": [
     {
       "id": "cd-2026-analista",
@@ -79,8 +83,118 @@
       "featured": false
     }
   ],
-  "generatedAt": null,
-  "status": "seed_only",
-  "discoveryStatus": "awaiting_schedule",
-  "leads": []
+  "leads": [
+    {
+      "id": "lead-ff33df5a828970c4",
+      "title": "Universidade de Brasília registra 11,7 mil inscrições no PAS 3 Subprograma 2024 - Cebraspe",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQbTA2U0h0WDNsY2pjUEFfNHBESHZSSFVjYXVlNVRsY3VvUWpMNFVDQ2FUSlRmMUtIc2d1X0VOUXRFWExsR3dxSDktTnNFUDFBRVd2WkEwNkNRTWVmWW16RmUxcVdEQ3RwU0hEaWJtR0JrRGd0RUFVTzlzMU9MUzl0Q1U4YnMtN1B2VXBmSVVPelZLQnZEY005bldVMUI0dVlEVnVKaXhUSURmSjA?oc=5",
+      "published": "2026-11-25",
+      "source": "https://www.cebraspe.org.br"
+    },
+    {
+      "id": "lead-5bfaeaaca022c4e1",
+      "title": "Concurso público do Cofen oferece oportunidades para 13 cargos de nível superior - Cofen",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcnZnY2ItZnlhUFV2TlNkekxUVWZXNmdXN01rRTFaQXpkLWlxVHllQUo0TEhkdVA0X2t1aDZMMnh1ekwzY3BkaFhpSFZLZ1F5TDRoTllTS2hWUHRqQUlzaTRYUUQxVlMtRThqRnY2Qm9mamg2VmItdjBlS2NxcXNfOUhHVE1fYUxBNURWbUxwaFdVTng3dXo3bkl0MmpyajJyUUdYOUNwNlU3QQ?oc=5",
+      "published": "2026-11-25",
+      "source": "https://www.cofen.gov.br"
+    },
+    {
+      "id": "lead-b6788fd5726375d9",
+      "title": "EDITAL Nº 1/2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS E FORMAÇÃO DE CADASTRO DE RESERVA PARA CARGOS DE NÍVEL SUPERIOR - Cofen",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNUEZvTXNrV2VBVDN5Y3dzSU9nVkR2eTV3blF5WUY5ODIwblZFbVZjNnAtYzNzX2hxYktMRWZveDdRM1JDczVPaFhJTjZRcFBwUVhuZ2tpazJsVVEyWEZNWWJ3UHlfV0RPS29UXzFmc2ZmdjZFUEduTGlndGg2Z0ZYVURCQlE3MTJVRXlOMnpZeVpJTGdXcU5HSnpOQWdLUVFQVnJjMkRfQkl0OXdWTmVrQ2ZVV202UktKT1hrXzJmYU9fLWdTUVRIUk1hemNkOTMxbkxLU1pabXREMTU5bE8xMQ?oc=5",
+      "published": "2026-11-25",
+      "source": "https://www.cofen.gov.br"
+    },
+    {
+      "id": "lead-464c866ea111d67e",
+      "title": "PREFEITURA DE ORÓS PRORROGA INSCRIÇÕES DO CONCURSO PÚBLICO COM 95 VAGAS - Prefeitura de Orós",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGNSSkxzVW8xMzNuYXo1b3NRRXV5N1hCSjhYNUxFT3NhbmhqemdLM29mZHFnVUJHMDRialRkZVh0Qjg4bTJIT0xweU5naExnMTZ2TG9qWXZ2RDg5SHpSWkQ1Rm1ZcGd0LUZUMnBLcm9Qd1JuRDlhX0ZOWFFwTXBNaU0zek9ycTdVa0R5M2RB?oc=5",
+      "published": "2026-11-25",
+      "source": "https://oros.ce.gov.br"
+    },
+    {
+      "id": "lead-c0d3a32c9e843de0",
+      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMHI2RW9STlFRMmZPS1BDSWdqZy1FRjVfbVlGQTNmOVVzWm5RSDZqQzkwbjBSbnpqcFZkSkNCR0RWSUpHMHRpTWgwMWRrWDZ1MjJFeW1GSktqLUpETWVSNGE3eV8xa0JEM18yMFBJeDlCODJoUWV0eHFPUy1adjFzdTFFOVIxWksyU1J4QVlpd3JqVk5VSkVNcGU0bDZDZG9BS0QtQjBFWF9keEp3WGFzYjBzQnNxMkxUOGRFQzV3?oc=5",
+      "published": "2026-11-25",
+      "source": "https://cruzdoespiritosanto.pb.gov.br"
+    },
+    {
+      "id": "lead-f6345b9b63fc1e77",
+      "title": "TRIBUNAL DE CONTAS DA UNIÃO CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA PARA O CARGO DE - UnB",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNeTY5TnpwSWZwdmxtbjdsSlFSSFlBQl90TTRWT2xCX1RFYjZmOGZlTkdnTUt3TURBRWVYeWZXX1VNRUxSNU91dV9GSzEzU0lLa0lIV0NFSWNtQzJRQ1JXUnZOU0ZfUGFYakthd2tXd2pTSHRpaUZzNWxTS2RXRE9kVXNhbXhWQlNOYXVReU1uUlM2eDRTNUNjbWJIc2dVS2tOcmdoeHpxZlhKbFdSOVF3WEViY0VzSEpDcFc3Q2FWOWU0SFlDLWc?oc=5",
+      "published": "2026-11-24",
+      "source": "https://cdn.cebraspe.org.br"
+    },
+    {
+      "id": "lead-cd50fd18328d9031",
+      "title": "GOVERNO DO ESTADO DE PERNAMBUCO SECRETARIA DE ADMINISTRAÇÃO – SAD/PE SECRETARIA DE DEFESA SOCIAL – SDS/PE CONCURSO PÚBLIC - Cebraspe",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTFJaTVN2SzREdTZELTlXSGlIV2J0UWVtWEhSOE5rZGwzWmt5SWFRdG5aOUlBcERsT2lpMS1nM1lRbzgtMkZwTHJYdHlSVUwxN3pEQjBlNE54WGlOR2pCc1gweEthbUF5Y0FBNlBzNFVZV3h5bnl6dnlfZ212bzVhQlZUMTlzQktHaEZNNmhuT0pETks3cFdXWXM4bFpzaTRvbE16Y1ZpLVQ2WXFGYS1BRDVEUjdRM19xc3hJRlJpckNOUQ?oc=5",
+      "published": "2026-11-24",
+      "source": "https://cdn.cebraspe.org.br"
+    },
+    {
+      "id": "lead-7e7ec4a940ef382e",
+      "title": "EDITAL Nº 02/2026 DO PROCESSO SELETIVO SIMPLIFICADO – PSS - SEMED A PREFEITURA MUNICIPAL DE PARINTINS, através da Secretaria - Prefeitura de Parintins",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZFVfRDhscG1xanZ6bi0zdVA0ck1zVFJBMmxhY2x0bUtFR2pITi1HVWRNWTlGN1d1dGFaUFNHODRoRVhtUklyRVNMZHpGWkJNc1RIblVwaFE5ZTJTZUw0elNqZTg0UGc2S2RleVNqUENqVGRaWjN6ZXRqTXNvaTRlMlZYb3M?oc=5",
+      "published": "2026-11-24",
+      "source": "https://files.parintins.am.gov.br"
+    },
+    {
+      "id": "lead-f2d08218d8575063",
+      "title": "Saúde prorroga inscrições do Processo Seletivo Simplificado nº 14/2026 até 29 de novembro - Prefeitura Municipal de Paranaíba-MS",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxObVg2RERyWllLM3F2NG14SHBHMmU1Q2YtcVRMellqNDVaVWNLSGVBTDRWbE1OUFhSdFgwVlpoU1F6bVgxM3VDaWpaUXc3aXNpQy0zRzU3em9DTG9Gc25wY04tUjNRVEZqMXNoZUFBLUUyUGk1WnFKNXdFTUczc1VIYVF6RFNRWlVPODJyRDljZkxkcUF2Vkg5TlQ3S2lTRVRrVVNrYjhicFpSMXRZUHFyaXdiQ0JTZFIwcGEwdHl4eVFNYTVMWV8xZFBFWG5jVWd2RkY3UENYX2tsd3hZ?oc=5",
+      "published": "2026-11-24",
+      "source": "https://www.paranaiba.ms.gov.br"
+    },
+    {
+      "id": "lead-cbfe098509e5a72e",
+      "title": "Edital Abertura Concurso Publico 001-2026 e Processo Seletivo 002-2026 Jupia -SC - Prefeitura de Jupiá -",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOVi1iMkVGQjBkQ2Exd0dUUEtfSklRcWtTMmp1RkZpVVVoMFdDMFBPVTlRejJCWS12eWVyaFBhN2FidEM1dGgwZS1PeU1uRm1fNnVKb3JsUUFGTTFybkNlc3dyeWo5aG5zMFRIRnZ0LWJBRVRmcFg0aVZyWVAxZ2JfT09LVlMwc1RMcmwtT1pXTDhSNkJIN25hVGVYYlQxbnY5TjVLWFVRVmNzMWVic3JlMzhKOA?oc=5",
+      "published": "2026-11-24",
+      "source": "https://jupia.sc.gov.br"
+    },
+    {
+      "id": "lead-8723884dfaac7667",
+      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONXI4eDU2bGg1UDFzbVFlWXlqWWVxVE5uakJ3Y3BRUElzY0dVeTFTdWJxOXZsREpsVVNpTzIyLThEejNIUXpqQlpNdW41WV9GSHkxRnZFQTktTWFJWXFURFNOUHpBZ0NyQTctU3F4Wkdxd2twQ0wyU3p4Y1E1dVBGaXU4aF9Jb0JabFhnWmQtd2YyQWFGVjluaEtNcTAxTVl5VUpDUnR6RktiTFJ6b1VuLUlkMA?oc=5",
+      "published": "2026-11-24",
+      "source": "https://cruzdoespiritosanto.pb.gov.br"
+    },
+    {
+      "id": "lead-6d3d85222a4992f7",
+      "title": "MINISTÉRIO DO EMPREENDEDORISMO, DA MICROEMPRESA E DA EMPRESA DE PEQUENO PORTE Gabinete do Ministro EDITAL Nº 35/2026 EXAME DE - UnB",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVm5yQ0FiTF9yMTA3a3RhZzJvY3dVMWhyNjJteEFGb25lQ21CRklDMmozR2V5MDBTOER4V2s0Sy1zZnBfdm9qdXdoNE5GUENnSlU2dHdjaGFnX2xOM3RLMG9zdWljTExxRUpnZWl2SXNXcnJxWXM1MW1GRXBkMGVUX25hd19zRFVQX21jYjVEcTF3TlI2RHZpVjFEYmwzZER3MnNHb2ZodkZGLXJqRVdULUUzMlFuSWdrdW1uOWljdXJkelFVczFJcHVpU2t3MjdhWHdV?oc=5",
+      "published": "2026-11-23",
+      "source": "https://cdn.cebraspe.org.br"
+    },
+    {
+      "id": "lead-dd83ece339947051",
+      "title": "Instituto de Pesquisas Ambientais de SP abre inscrições de concurso público para 98 vagas - agenciasp.sp.gov.br",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZHZhemJiZ1UxOGVFeHhwcWZ1UFZNWlBrMEpXbVVHeF80eFhiQU92bXM1RGdCWG9WVmdXeG45d3JZQjd0Yk9faDkwYUNLYjdMQWtibWVwNVoyam81U2tEeWhpdXVlR3RqLXZyZ2VJam5Fd0M0b3Y2aWtSRGtXV1g2dUd5Mzk4ck84X2RSeVE2eTdGVnlYRlNWdndLTmpUdmlqTkVUMDFqbTN0cUJSNnkzSW1fcUhCVThXUGJJRlREYXJQaTYxUFJsb0VORncwLWV6OHc?oc=5",
+      "published": "2026-11-23",
+      "source": "https://www.agenciasp.sp.gov.br"
+    },
+    {
+      "id": "lead-328b22eb11b50c5d",
+      "title": "Concurso Público nº 001/2026: Prefeitura de Iepê abre inscrições - Prefeitura de Iepê",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
+      "published": "2026-11-23",
+      "source": "https://www.iepe.sp.gov.br"
+    },
+    {
+      "id": "lead-1f3a8ad5e3367b36",
+      "title": "Prefeitura de Itupeva abre concurso público com 79 vagas e salários de até R$ 13,2 mil - Prefeitura de Itupeva",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUzl0aFJJMmNsNmR2YXlKVG9nZ0o1WXEtdlMxTXh4YmNjTm56UTluc3F0WFFqTkJrM3l6UkhIOFMxQllRa3ZTZEJKTDRTdjM5ZDRma2RsWjJycXIwNEdSTWhwZWpBV09fMlZBOEtNaEI0T0NuUmlQTUFQb3hMVF9QdjRxRGFsOXpGM3BZYnRpLWZuek5yc1FBWVBPX0hPbGVaVjFYRkw1X0R2U1ByTDZqQzk2WkRsMUxnQWI1LTQ2RnE?oc=5",
+      "published": "2026-11-23",
+      "source": "https://www.itupeva.sp.gov.br"
+    },
+    {
+      "id": "lead-81315e85da4b07e0",
+      "title": "Prefeitura de Sete Barras abre Concurso Público com 42 vagas e salários de até R$ 6,4 mil - Prefeitura de Sete Barras/SP",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4tUTdXc2c1Zk9oSldncUJPRGlMckN2cFhjVzFWcEM5Y0xnMVl2YXY5TUY1eG9zQWY1UFEzMzVJSmlEbkszMTRwWngwRmRaY1lWTTRB?oc=5",
+      "published": "2026-11-23",
+      "source": "https://setebarras.sp.gov.br"
+    }
+  ]
 }
