@@ -13,7 +13,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DEST = path.join(ROOT, 'data', 'atualizacoes.json');
 const LIMIT_PER_FEED = 80;
 const LIMIT_TOTAL = 120;
-const AGE_DAYS = 45;
+const AGE_DAYS = 14;
 const MS_DAY = 86400000;
 const FEEDS = Object.freeze([
   {source: 'Correio Braziliense', host: 'correiobraziliense.com.br', query: 'site:correiobraziliense.com.br (vagas OR emprego OR estágio OR trainee OR aprendiz) when:14d'},
@@ -48,8 +48,11 @@ function category(title) {
 }
 function likelyOpportunity(title) {
   const t=normalizeText(title);
-  return /(vagas?|empregos?|estagios?|estagiari[oa]s?|trainee|aprendi[zc]|contrat(a|acao|acoes)|recrutamento|selecao|oportunidades?)/.test(t)
-    && !/(concurso publico|concurso para|edital de concurso|certame|aposentadoria)/.test(t);
+  const excluded = /\\b(aulao|cursos?|qualificacao|vestibular|castrar|castracao|caes|gatos|concursos?|certames?|aposentadoria|emprego e renda|indice de emprego|desenvolvimento|entrevistas?|gravidez|planejamento familiar|jornada reduzida|lei do estagio|olimpic[oa]s?|pan de lima|contratada pela|contratado pela|contratada para fornecer)\\b/;
+  if (excluded.test(t)) return false;
+  const opportunity = /\\b(vagas?|empregos?|estagios?|estagiari[oa]s?|trainee|aprendi[zc]|recenseador|contrata-se)\\b/;
+  const hiringAction = /\\b(abre|abrem|abriu|abertas?|aberto|abertos|oferece|oferecem|disponibiliza|disponibilizam|tem|esta com|estao com|selecao|processo seletivo|recrutamento|contrata-se|contratando|contrata)\\b/;
+  return opportunity.test(t) && hiringAction.test(t);
 }
 function expectedHost(raw,host) {
   try { const u=new URL(raw);const h=u.hostname.toLowerCase().replace(/^www\./,'');return u.protocol==='https:' && h===host; }
