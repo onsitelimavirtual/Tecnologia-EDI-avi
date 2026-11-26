@@ -249,3 +249,17 @@ test('inclui indicador de acessos acumulados com contador externo configurado', 
   assert.match(html, /credentials: 'omit'/);
   assert.match(html, /Contador por CounterAPI/);
 });
+
+
+test('publica guia editorial de carreira, entrevistas e estudos com navegação e referências', async () => {
+  const html = await fs.readFile(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(html, /<a href="#guia">/);
+  assert.match(html, /<section id="guia"[^>]*aria-labelledby="guide-title"/);
+  assert.match(html, /id="guia-entrevista"/);
+  assert.match(html, /id="guia-estudos"/);
+  assert.match(html, /Estrutura STAR/);
+  assert.match(html, /revisões/);
+  assert.match(html, /periodicos\.saude\.sp\.gov\.br/);
+  assert.match(html, /carreiras\.cps\.sp\.gov\.br/);
+  assert.match(html, /href="favicon\.png"/);
+});
