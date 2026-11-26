@@ -1,6 +1,14 @@
-# Painel de Oportunidades de Emprego — Versão 4.3
+# Painel de Oportunidades de Emprego — Versão 4.3.1
 
 **Projeto autoral: Nailson Rodrigues de Lima.** Aplicação web para organizar referências de oportunidades de emprego, concursos públicos e divulgação gratuita de softwares autorais no rodapé.
+
+
+## Correção 4.3.1 — Navegação para concursos no celular
+
+- Corrigida a camada decorativa do cartão de destaque: o pseudo-elemento `.promo:after` agora usa `pointer-events: none` e não intercepta toques.
+- O link **Ver concursos em destaque** fica explicitamente acima da decoração, com `z-index` e `touch-action` apropriados.
+- Os links para `#concursos` agora possuem tratamento explícito: atualizam a âncora e chamam `scrollIntoView`, respeitando a preferência do dispositivo por movimento reduzido.
+- A âncora mantém seu `href` nativo como alternativa de navegação caso o JavaScript não esteja disponível.
 
 ## O que mudou na versão 4.3
 
