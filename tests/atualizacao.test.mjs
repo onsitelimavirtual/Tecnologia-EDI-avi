@@ -162,6 +162,59 @@ test('preserva o catálogo existente quando todas as fontes externas falham', as
   }
 });
 
+test('remove do catálogo preservado referências antigas que não são oportunidades de contratação', async () => {
+  const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'painel-oportunidades-'));
+  try {
+    const dest = path.join(dir, 'data', 'atualizacoes.json');
+    await fs.mkdir(path.dirname(dest), { recursive: true });
+    const previous = {
+      generatedAt: '2026-11-24T12:00:00.000Z',
+      records: [
+        {
+          id: 'auto-job-valid',
+          title: 'Agências do trabalhador oferecem 555 vagas de emprego',
+          type: 'Emprego',
+          source: 'Correio Braziliense',
+          location: 'DF',
+          published: '2026-11-24',
+          deadline: '',
+          url: 'https://news.google.com/rss/articles/previous-job',
+          description: 'Referência de emprego.',
+          origin: 'automatico'
+        },
+        {
+          id: 'auto-noise',
+          title: 'Aulão gratuito de IA e nuvem no IFB abre 50 vagas',
+          type: 'Emprego',
+          source: 'Correio Braziliense',
+          location: 'DF',
+          published: '2026-11-24',
+          deadline: '',
+          url: 'https://news.google.com/rss/articles/previous-noise',
+          description: 'Notícia sem contratação.',
+          origin: 'automatico'
+        }
+      ]
+    };
+    await fs.writeFile(dest, JSON.stringify(previous), 'utf8');
+    const result = await updateCatalog({
+      fetchFn: async (url) => {
+        if (new URL(url).searchParams.get('q').includes('correiobraziliense.com.br')) {
+          return { ok: true, text: async () => jobFeed() };
+        }
+        return { ok: false, status: 503, text: async () => '' };
+      },
+      now,
+      dest,
+      log: quietLog
+    });
+    assert.equal(result.records.some(x => x.id === 'auto-job-valid'), true);
+    assert.equal(result.records.some(x => x.id === 'auto-noise'), false);
+  } finally {
+    await fs.rm(dir, { recursive: true, force: true });
+  }
+});
+
 test('publica atualização parcial quando pelo menos uma fonte responde', async () => {
   const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'painel-oportunidades-'));
   try {
