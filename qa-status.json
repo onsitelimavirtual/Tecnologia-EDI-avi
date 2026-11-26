@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "product": "Painel de Oportunidades de Emprego",
+  "engine": "QA Integridade 1.0",
+  "generatedAt": null,
+  "status": "awaiting_first_run",
+  "summary": "Aguardando a primeira execução do motor de QA no GitHub Actions.",
+  "totals": { "checks": 0, "passed": 0, "failed": 0, "warnings": 0 },
+  "metrics": {},
+  "checks": [],
+  "warnings": [],
+  "errors": []
+}
