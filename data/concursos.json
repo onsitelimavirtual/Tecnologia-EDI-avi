@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T02:27:40.591Z",
+  "generatedAt": "2026-11-26T02:30:53.758Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -190,11 +190,11 @@
       "source": "https://www.agenciasp.sp.gov.br"
     },
     {
-      "id": "lead-1f3a8ad5e3367b36",
-      "title": "Prefeitura de Itupeva abre concurso público com 79 vagas e salários de até R$ 13,2 mil - Prefeitura de Itupeva",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUzl0aFJJMmNsNmR2YXlKVG9nZ0o1WXEtdlMxTXh4YmNjTm56UTluc3F0WFFqTkJrM3l6UkhIOFMxQllRa3ZTZEJKTDRTdjM5ZDRma2RsWjJycXIwNEdSTWhwZWpBV09fMlZBOEtNaEI0T0NuUmlQTUFQb3hMVF9QdjRxRGFsOXpGM3BZYnRpLWZuek5yc1FBWVBPX0hPbGVaVjFYRkw1X0R2U1ByTDZqQzk2WkRsMUxnQWI1LTQ2RnE?oc=5",
+      "id": "lead-328b22eb11b50c5d",
+      "title": "Concurso Público nº 001/2026: Prefeitura de Iepê abre inscrições - Prefeitura de Iepê",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
       "published": "2026-11-23",
-      "source": "https://www.itupeva.sp.gov.br"
+      "source": "https://www.iepe.sp.gov.br"
     }
   ]
 }
