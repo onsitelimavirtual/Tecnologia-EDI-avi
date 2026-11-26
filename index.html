@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#071827">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <meta name="description" content="Painel de Oportunidades de Emprego: organize referências jornalísticas sobre emprego, estágio e aprendizagem, com acesso às fontes originais, concursos públicos e divulgação gratuita de projetos autorais.">
-<title>Painel de Oportunidades de Emprego — v4.3.2</title>
+<title>Painel de Oportunidades de Emprego — v4.3.3</title>
 <style>
 :root{--ink:#101e32;--muted:#63748a;--navy:#091624;--navy2:#10253a;--blue:#095ce4;--cyan:#08c3e2;--line:#e3eaf1;--bg:#f6f8fc;--white:#fff;--focus:#f59c21;--shadow:0 10px 32px rgba(23,44,76,.065)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:14px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:3px}button[disabled]{opacity:.55;cursor:wait}.skip{position:absolute;left:-9999px;z-index:100;background:#fff;padding:10px 15px}.skip:focus{left:10px;top:10px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -73,6 +73,17 @@ dialog{border:0;border-radius:20px;max-width:590px;width:calc(100% - 26px);box-s
 .contest-head{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:19px}.contest-head h2{font-size:clamp(21px,2.2vw,27px);letter-spacing:-.7px;line-height:1.15;margin:5px 0}.contest-head p{font-size:12px;color:#61768d;max-width:720px;margin:6px 0}.contest-eyebrow{font-size:10px;font-weight:860;color:#036dcf;letter-spacing:1.1px}.contest-summary{flex:none;background:#eaf6ff;color:#125d9a;border-radius:40px;padding:9px 13px;font-weight:780;font-size:12px}
 .contest-filter-box{display:grid;grid-template-columns:2fr repeat(3,minmax(115px,1fr)) auto;gap:10px;background:#f1f6fb;border:1px solid #e2ecf5;border-radius:15px;padding:13px;align-items:end}.contest-field{font-size:11px;font-weight:750;display:flex;flex-direction:column;gap:5px;color:#3e586f;min-width:0}.contest-field input,.contest-field select{border:1px solid #d5e2ee;color:#263e54;background:#fff;border-radius:9px;padding:11px 9px;min-height:42px;min-width:0;width:100%;font-size:12px}.contest-clear,.contest-refresh{border:1px solid #cee1f0;background:#fff;color:#1467ad;border-radius:9px;padding:11px;font-size:11px;font-weight:780;min-height:42px}.contest-info{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:11px;color:#60798c;margin:13px 0}.contest-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.contest-card{position:relative;min-width:0;border:1px solid #cfe6f0;background:linear-gradient(145deg,#f0fbff,#f7fbff);padding:20px;border-radius:16px;display:flex;flex-direction:column;gap:12px}.contest-card:nth-child(4n+2){border-color:#d7e9e7;background:linear-gradient(140deg,#ecfbf7,#f9fcfb)}.contest-card:nth-child(4n+3){border-color:#ece3f5;background:linear-gradient(140deg,#f5efff,#fdfaff)}.contest-card:nth-child(4n+4){border-color:#f2e4d1;background:linear-gradient(140deg,#fff7eb,#fffdf8)}.contest-card-head{display:flex;justify-content:space-between;gap:9px;align-items:center}.contest-pill{background:#fff;border:1px solid #d8e8f0;color:#19648b;padding:5px 9px;border-radius:40px;font-size:10px;font-weight:830}.contest-pill.ending{background:#fff1df;border-color:#f9dbad;color:#975c12}.contest-pill.expired{background:#ffece9;color:#954537;border-color:#f7d8cf}.contest-pill.future{background:#ebeeff;color:#4d5fa8;border-color:#d8defc}.contest-tag{color:#61788c;font-size:11px}.contest-card h3{font-size:18px;line-height:1.28;margin:0;letter-spacing:-.35px}.contest-tags{display:flex;flex-wrap:wrap;gap:6px}.contest-tags span{border:1px solid #dfebf2;border-radius:22px;background:#fff9;padding:5px 8px;font-size:10px;color:#47637a}.contest-summary-text{margin:0;color:#4f677c;font-size:12px;line-height:1.55;flex:1}.contest-dates{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;border-top:1px solid #d8e6ed;padding-top:11px}.contest-dates small{display:block;font-size:10px;color:#688099}.contest-dates strong{font-size:13px;color:#243a4d}.contest-card-bottom{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}.contest-card-bottom span{font-size:10px;color:#647b8c}.contest-card-bottom a{font-size:12px;font-weight:800;background:#082b4a;color:white;text-decoration:none;padding:10px 14px;border-radius:10px}.contest-card-bottom a:hover{background:#0d5b93}.contest-footer{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin:16px 0 0;font-size:11px;color:#698094}.contest-leads{background:#f8fbff;border:1px solid #dce9f4;border-radius:13px;margin:21px 0 0;padding:16px}.contest-leads h3{margin:0 0 4px;font-size:15px}.contest-leads p{margin:4px 0 12px;font-size:11px;color:#667e93}.contest-leads a{display:block;padding:10px;border-top:1px solid #e1ebf4;color:#0b58a7;font-size:12px;text-decoration:none}.contest-disclaimer{margin:16px 0 0;font-size:11px;line-height:1.6;color:#688197}.contest-no-results{grid-column:1/-1;text-align:center;padding:38px 12px;border:1px dashed #c9dcea;border-radius:14px;color:#536c80;background:#f9fcff}
 @media(max-width:1160px){.contest-filter-box{grid-template-columns:1fr 1fr}.contest-clear{justify-self:start}}@media(max-width:720px){.contest-section{padding:16px 12px}.contest-grid{grid-template-columns:1fr}.contest-head{align-items:start;flex-direction:column}.contest-summary{align-self:flex-start}.contest-filter-box{grid-template-columns:1fr 1fr;gap:9px}.contest-text{grid-column:1/-1}.contest-info{align-items:flex-start}.contest-dates strong{font-size:12px}}@media(max-width:360px){.contest-filter-box{grid-template-columns:1fr}.contest-text{grid-column:auto}}
+
+/* v4.3.3 — indicador agregado de acessos */
+.stats{grid-template-columns:repeat(5,minmax(0,1fr))}
+.stat-page-views{border-color:#cfe4f4;background:linear-gradient(145deg,#fff,#f4faff)}
+.stat-page-views strong{color:#0b5fae}
+.stat-page-views small{display:block;line-height:1.4}
+.counter-credit{display:inline-block;margin-top:3px;font-size:9px;color:#7b8fa2;text-decoration:none}
+.counter-credit:hover{text-decoration:underline;color:#0b5fae}
+@media(max-width:1170px){.stats{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
 </style>
 </head>
 <body>
@@ -122,7 +133,7 @@ dialog{border:0;border-radius:20px;max-width:590px;width:calc(100% - 26px);box-s
    <div class="grid" id="recordGrid" aria-live="polite"></div><div class="load-more-wrap"><button id="loadMore" class="btn ghost" type="button" hidden>Exibir mais publicações</button><span id="visibleCount" class="visible-count"></span></div>
    <div class="tools-panel"><span class="tools-title">Gerenciar referências</span><button class="btn primary" id="addButton" type="button">＋ Adicionar publicação</button><button class="btn ghost" id="refreshButton" type="button">↻ Consultar atualizações</button><button class="btn ghost" id="exportButton" type="button">↓ Backup JSON</button><button class="btn ghost" id="importButton" type="button">↑ Importar JSON</button><button class="btn ghost" id="csvButton" type="button">↓ Exportar CSV</button><input id="importFile" class="file-input" type="file" accept=".json,application/json" aria-label="Selecionar arquivo JSON"></div>
   </section>
-  <section class="stats" aria-label="Indicadores do painel"><div class="stat"><div class="stat-top">Referências cadastradas <span class="bubble" aria-hidden="true">▤</span></div><strong id="statCount">0</strong><small>Não são vagas confirmadas</small></div><div class="stat"><div class="stat-top">Favoritos <span class="bubble" aria-hidden="true">♡</span></div><strong id="statFav">0</strong><small>Salvos neste navegador</small></div><div class="stat"><div class="stat-top">Fontes representadas <span class="bubble" aria-hidden="true">◉</span></div><strong id="statSources">0</strong><small>Entre referências cadastradas</small></div><div class="stat"><div class="stat-top">Prazos informados <span class="bubble" aria-hidden="true">◷</span></div><strong id="statDeadline">0</strong><small>Confirmar no anúncio original</small></div></section>
+  <section class="stats" aria-label="Indicadores do painel"><div class="stat"><div class="stat-top">Referências cadastradas <span class="bubble" aria-hidden="true">▤</span></div><strong id="statCount">0</strong><small>Não são vagas confirmadas</small></div><div class="stat"><div class="stat-top">Favoritos <span class="bubble" aria-hidden="true">♡</span></div><strong id="statFav">0</strong><small>Salvos neste navegador</small></div><div class="stat"><div class="stat-top">Fontes representadas <span class="bubble" aria-hidden="true">◉</span></div><strong id="statSources">0</strong><small>Entre referências cadastradas</small></div><div class="stat"><div class="stat-top">Prazos informados <span class="bubble" aria-hidden="true">◷</span></div><strong id="statDeadline">0</strong><small>Confirmar no anúncio original</small></div><div class="stat stat-page-views"><div class="stat-top">Acessos à página <span class="bubble" aria-hidden="true">◉</span></div><strong id="pageViewsCount" aria-live="polite" aria-label="Carregando acessos">—</strong><small id="pageViewsStatus">Desde a ativação do contador</small><a class="counter-credit" href="https://counterapi.com/" target="_blank" rel="noopener noreferrer">Contador por CounterAPI</a></div></section>
 
 <section id="concursos" class="contest-section" aria-labelledby="contestTitle">
   <div class="contest-head">
@@ -149,7 +160,7 @@ dialog{border:0;border-radius:20px;max-width:590px;width:calc(100% - 26px);box-s
   </div></section>
   <section id="orientacoes" class="status" aria-labelledby="attention-title"><strong id="attention-title">Orientações e segurança</strong><p>Este sistema apresenta referências a notícias e anúncios; a data é a da publicação, não confirmação de vaga aberta. Verifique prazos e requisitos no site original. O feed do Google Notícias é um índice intermediário, não uma API oficial dos jornais. A atualização agendada depende da configuração do GitHub Actions; abrir o HTML local não a executa.</p><p>Não pague por processos seletivos sem verificar a empresa. O painel não recebe currículos, não exige cadastro e armazena favoritos e referências adicionadas somente neste navegador.</p></section>
   <section id="projetos" class="projects-section footer-publicity" aria-labelledby="projects-title" hidden><div class="section-head"><div class="heading-group"><span class="heading-icon" aria-hidden="true">✦</span><div><h2 id="projects-title">Divulgação gratuita de projetos autorais</h2><p>Softwares e conteúdos do autor do painel, apresentados separadamente das oportunidades de emprego.</p></div></div><span class="showcase-badge">Divulgação autoral</span></div><div class="projects-grid" id="projectsGrid"></div><p class="projects-fine">Este espaço é habilitado apenas quando o administrador publica projetos. Publicidade autoral, sem anúncios de terceiros.</p></section>
-  <footer><span>© Nailson Rodrigues de Lima • Painel de Oportunidades de Emprego v4.3</span><span>Portal independente • não afiliado aos jornais citados</span><span>Faça backups periódicos dos dados locais</span></footer>
+  <footer><span>© Nailson Rodrigues de Lima • Painel de Oportunidades de Emprego v4.3.3</span><span>Portal independente • não afiliado aos jornais citados</span><span>Faça backups periódicos dos dados locais</span></footer>
  </main>
 </div>
 <dialog id="recordDialog" aria-labelledby="dialog-title"><form id="recordForm" novalidate><div class="modal-header"><h2 id="dialog-title">Adicionar publicação</h2><button class="close" type="button" id="closeDialog" aria-label="Fechar formulário">×</button></div><div class="modal-body"><p>Cadastre apenas referências reais que você consultou. Isso não confirma automaticamente uma vaga aberta.</p><div class="form-grid"><label class="field full">Título da publicação *<input name="title" required maxlength="150" placeholder="Ex.: Programa de estágio da empresa X"></label><label class="field">Tipo *<select name="type" required><option value="">Selecione</option><option>Emprego</option><option>Estágio</option><option>Aprendiz</option><option>Trainee</option></select></label><label class="field">Fonte *<select name="source" required><option value="">Selecione</option><option>Correio Braziliense</option><option>CorreioWeb</option><option>Classificados CB</option></select></label><label class="field full">Link da matéria ou anúncio *<input name="url" required type="url" inputmode="url" maxlength="1200" placeholder="https://..."></label><label class="field">Localidade <input name="location" maxlength="100" placeholder="Ex.: Brasília / DF"></label><label class="field">Data da publicação *<input name="published" required type="date"></label><label class="field">Prazo para inscrição (se informado)<input name="deadline" type="date"></label><label class="field full">Observação resumida<input name="description" maxlength="250" placeholder="Descrição breve redigida por você"></label></div><p class="fine">São aceitos somente links HTTPS dos três domínios indicados. Nenhum formulário é enviado a um servidor.</p><div id="formError" class="small-status" role="alert" hidden></div><div class="modal-actions"><button class="btn ghost" type="button" id="cancelDialog">Cancelar</button><button class="btn primary" type="submit">Salvar publicação</button></div></div></form></dialog>
@@ -484,6 +495,49 @@ if(location.protocol!=='file:')setInterval(()=>refresh(true),15*60*1000);
       });
     });
   });
+})();
+</script>
+<script>
+/* Métrica agregada de acessos: conta carregamentos da página publicada. */
+(() => {
+  const count = document.getElementById('pageViewsCount');
+  const status = document.getElementById('pageViewsStatus');
+  if (!count || !status) return;
+
+  const isPublishedPage = location.protocol === 'https:' &&
+    location.hostname === 'onsitelimavirtual.github.io' &&
+    location.pathname.startsWith('/painel-de-oportunidades/');
+
+  if (!isPublishedPage) {
+    count.textContent = '—';
+    status.textContent = 'Contagem disponível na página publicada';
+    return;
+  }
+
+  const endpoint = 'https://counterapi.com/api/onsitelimavirtual.github.io/view/painel-de-oportunidades';
+  fetch(endpoint, {
+    method: 'GET',
+    mode: 'cors',
+    credentials: 'omit',
+    cache: 'no-store',
+    referrerPolicy: 'no-referrer'
+  })
+    .then(response => {
+      if (!response.ok) throw new Error('Serviço de contagem indisponível');
+      return response.json();
+    })
+    .then(data => {
+      const total = Number(data && data.value);
+      if (!Number.isSafeInteger(total) || total < 0) throw new Error('Resposta inválida');
+      count.textContent = new Intl.NumberFormat('pt-BR').format(total);
+      count.setAttribute('aria-label', total + ' acessos acumulados');
+      status.textContent = 'Visualizações acumuladas desde a ativação';
+    })
+    .catch(() => {
+      count.textContent = '—';
+      count.setAttribute('aria-label', 'Contagem temporariamente indisponível');
+      status.textContent = 'Contador temporariamente indisponível';
+    });
 })();
 </script>
 </body>

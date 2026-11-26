@@ -1,7 +1,16 @@
-# Painel de Oportunidades de Emprego — Versão 4.3.2
+# Painel de Oportunidades de Emprego — Versão 4.3.3
 
 **Projeto autoral: Nailson Rodrigues de Lima.** Aplicação web para organizar referências de oportunidades de emprego, concursos públicos e divulgação gratuita de softwares autorais no rodapé.
 
+
+## Versão 4.3.3 — métrica de acessos
+
+- Adicionado cartão **Acessos à página** aos indicadores, com total acumulado desde a ativação do contador.
+- A métrica registra visualizações da página publicada em todos os dispositivos; não representa pessoas únicas nem inscrições em oportunidades.
+- Integração com a API pública gratuita do CounterAPI, sem cadastro, chave privada ou coleta de dados pessoais pelo código do painel.
+- O provedor informa que anonimiza endereços IP e dados do navegador por meio de hashes. Como a contagem é pública e externa, deve ser tratada como indicador aproximado, não como auditoria antifraude.
+- Se o serviço externo falhar, o painel mostra indisponibilidade em vez de inventar ou reaproveitar um número.
+- O contador começa em zero na primeira visualização registrada após a implantação; não inclui acessos históricos.
 
 ## Correção 4.3.2 — integração da atualização
 
@@ -68,7 +77,7 @@ Com Node.js 20 ou superior:
 node --test tests/*.test.mjs
 ```
 
-A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades, filtragem de feeds por domínio e data, validação de concursos e prazos, descoberta de manchetes oficiais, preservação do catálogo quando todas as fontes falham e atualização parcial quando ao menos uma fonte responde.
+A suíte Node em `tests/atualizacao.test.mjs` cobre decodificação de entidades, filtragem de feeds por domínio e data, validação de concursos e prazos, descoberta de manchetes oficiais, preservação do catálogo quando todas as fontes falham, atualização parcial e presença da métrica de acessos.
 
 Para os testes de interface locais, com Playwright e Chromium instalados:
 

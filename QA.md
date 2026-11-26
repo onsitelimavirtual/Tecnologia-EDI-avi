@@ -1,4 +1,4 @@
-# Relatório de QA — Painel de Oportunidades de Emprego v4.3.2
+# Relatório de QA — Painel de Oportunidades de Emprego v4.3.3
 
 ## Diagnóstico da falha de atualização
 
@@ -6,7 +6,7 @@ A interface consultava `./data/atualizacoes.json`, enquanto o arquivo publicado 
 
 Essa divergência impedia a leitura do catálogo e a execução da rotina agendada. A mensagem exibida no navegador era genérica, mas os registros locais permaneciam preservados.
 
-## Correções implementadas
+## Métrica de acessos — versão 4.3.3\n\n- Cartão agregado **Acessos à página** inserido nos indicadores do painel.\n- Conta carregamentos da página publicada por meio da API pública do CounterAPI, com namespace e chave fixos.\n- A contagem inicia na ativação; não recupera visualizações históricas e não representa visitantes únicos.\n- O código do painel não envia nome, e-mail, localização ou identificadores de usuário. O provedor declara anonimizar IP e dados do navegador por hashes; por ser um serviço externo, a contagem é aproximada e sujeita às limitações do provedor.\n- Se a API falhar, a interface apresenta indisponibilidade e mantém o restante do painel funcional.\n\n## Correções implementadas
 
 - Catálogos colocados em `data/`, no mesmo caminho consumido pela interface, pelos scripts e pelo QA.
 - Motores colocados em `scripts/`, com os caminhos relativos já previstos no código.
@@ -20,7 +20,7 @@ Essa divergência impedia a leitura do catálogo e a execução da rotina agenda
 
 Arquivo: `tests/atualizacao.test.mjs`.
 
-A suíte contém 15 testes unitários. Ela deve ser executada pelo workflow com:
+A suíte contém 16 testes unitários. Ela deve ser executada pelo workflow com:
 
 ```bash
 node --test tests/*.test.mjs
@@ -43,14 +43,14 @@ Os resultados reais da primeira execução serão os exibidos no GitHub Actions.
 - A curadoria de concursos fornecida permanece datada de 15/10/2026 e contém prazos que precisam de conferência humana. O sistema não inventa reabertura nem prorrogação.
 - O teste automatizado não substitui a validação do resultado publicado no GitHub Pages nem o teste físico em Android.
 
-## Estado da última execução
+## Estado da última execução antes da métrica v4.3.3
 
 **Execução concluída em 26/11/2026, às 02h27 UTC.**
 
-- Testes Node.js: **15 aprovados, 0 falhas**.
+- Testes Node.js: **15 aprovados, 0 falhas na execução anterior à inclusão da métrica de acessos**.
 - Atualização de empregos: **3 de 3 feeds responderam**; 10 referências permaneceram após filtros de relevância e janela de 14 dias.
 - Concursos: 5 registros permanecem na curadoria oficial e 16 manchetes foram coletadas para revisão humana.
-- QA: **27 de 27 verificações aprovadas**, sem falhas críticas e com 3 alertas de curadoria/prazos.
+- QA: **27 de 27 verificações aprovadas na execução anterior à inclusão da métrica de acessos**, sem falhas críticas e com 3 alertas de curadoria/prazos.
 - Publicação dos catálogos: concluída com sucesso.
 - GitHub Pages: build e deploy concluídos com sucesso.
 

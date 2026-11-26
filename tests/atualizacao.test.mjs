@@ -240,3 +240,12 @@ test('publica atualização parcial quando pelo menos uma fonte responde', async
     await fs.rm(dir, { recursive: true, force: true });
   }
 });
+
+test('inclui indicador de acessos acumulados com contador externo configurado', async () => {
+  const html = await fs.readFile(new URL('../index.html', import.meta.url), 'utf8');
+  assert.match(html, /id="pageViewsCount"/);
+  assert.match(html, /id="pageViewsStatus"/);
+  assert.match(html, /https:\/\/counterapi\.com\/api\/onsitelimavirtual\.github\.io\/view\/painel-de-oportunidades/);
+  assert.match(html, /credentials: 'omit'/);
+  assert.match(html, /Contador por CounterAPI/);
+});

@@ -255,6 +255,9 @@ export async function runIntegrityQA({ root = ROOT, now = new Date(), writeRepor
   }
   check('indicador_qa_na_interface', /id=["']qaStatus["']/.test(html),
     'A interface deve apresentar o estado da última verificação do motor de QA.');
+  check('indicador_acessos_na_interface', /id=["']pageViewsCount["']/.test(html) &&
+    /https:\/\/counterapi\.com\/api\/onsitelimavirtual\.github\.io\/view\/painel-de-oportunidades/.test(html),
+    'A interface deve apresentar o contador agregado de acessos com namespace e chave fixos.');
   check('agenda_duas_vezes_ao_dia', /cron:\s*["']17 9,21 \* \* \*["']/.test(workflow),
     'O GitHub Actions deve agendar duas execuções diárias: 06h17 e 18h17 no horário de Brasília.');
   check('qa_antes_da_publicacao', /node scripts\/qa-integridade\.mjs/.test(workflow),
