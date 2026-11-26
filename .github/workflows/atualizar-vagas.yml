@@ -9,7 +9,7 @@ on:
   schedule:
     # 06h17 e 18h17 no horário de Brasília (UTC-3). O GitHub pode atrasar a fila.
     - cron: '17 9,21 * * *'
-  workflow_dispatch
+  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
