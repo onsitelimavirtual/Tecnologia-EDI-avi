@@ -1,11 +1,35 @@
 {
-  "generatedAt": "2026-11-27T03:40:03.052Z",
+  "generatedAt": "2026-11-27T19:03:43.101Z",
   "status": "ok",
   "provider": "Google Notícias RSS (índice intermediário; não API oficial do Correio)",
   "coverage": "Apenas manchetes indexadas. Não há confirmação de inscrição aberta ou cobertura completa.",
   "feedsConsulted": 3,
   "feedsSucceeded": 3,
   "records": [
+    {
+      "id": "auto-4f3b4b8e30cd485d43b5",
+      "title": "PagBank abre inscrições para Programa Trainee",
+      "type": "Trainee",
+      "source": "Correio Braziliense",
+      "location": "Não informada",
+      "published": "2026-11-27",
+      "deadline": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPS05LaFhMZ2k0b1czcVQxejZ0SkZ6SFJ4cGZtWDFoTjk5Zmt1UUotWGhXY2YyRi1FSDNkcWdFVWhBZm9PMGZsRGF3VjB3RTY0M1h6aGdWLXdncDhxZkhUVmxLUVpNc0MxdDl3bTVIQmxDSGp6NEVyWk5lbmppakpnVGVGNDZBSkNoZ2VMb09pZ2tsSzhSZU1hb0JIeHJKbUZDb0FJX2FiSloxMDJTUXpURXR0N0pQQ1FXT0QzbGhBTkk4emRuSFRnSmw3VUo?oc=5",
+      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
+      "origin": "automatico"
+    },
+    {
+      "id": "auto-fb04211fe94f7782b307",
+      "title": "Agências do Trabalhador do DF abrem 546 vagas de emprego nesta sexta",
+      "type": "Emprego",
+      "source": "Correio Braziliense",
+      "location": "Não informada",
+      "published": "2026-11-27",
+      "deadline": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNWnRGZHhhcUUzM1E3YlVfUFFSb2FTcVV3NFhnc0FURkt6MjJoV0tjaWY0ME5CMTBscllhV2xQOVRKTWF2ZjNGUGRCTlhRdWltcVdoNVFWRktWV2ZoeEFzOWR6a1hUX2JpeXN1LVc2VGdqdFlCMFpZN3hiX0Q0clBuMVNncDVnWXUzV0R3d0JJSjhkU0k4RDdCci1VVjdKYjc1UEk0S2lGdVJrUTA5N0NSaS1DMERrOFIzOG5paHZ5RWQxZU54MHhfeUZJT0FvMlZ1dkhKNdIB2gFBVV95cUxOYy1BMi1wV0pYM2Q0bjVLZE5SU3Zxek1ydHdkSHd0RGhfM0pQMGpCZkhfTWJacUJzX3RpdF9abXVOdWxyYVY3bnNROGw3ZUoxMDRRT3phZHdSVGlVU012UnZ0RVR6RkdNYi1JY3dsa0JuQWlONVNHR1NCSTJudWNTTVRXcmU2aXM5cjhhWnJRNy1NdzczQlMwZWVFZzM1anRQMmZ6LXlybWVzSHc1MTdaOVhoZHljclZvZVlLRUVHczhId1ZtSXY0M09jZnJQRHhhbmpMNUpsdGZTUQ?oc=5",
+      "description": "Referência encontrada no Google Notícias. Consulte a publicação e confirme prazos e disponibilidade.",
+      "origin": "automatico"
+    },
     {
       "id": "auto-18b8cd26ba5189a3cc32",
       "title": "Grupo Bora Brasil abre inscrições para Programa Trainee 2027",
