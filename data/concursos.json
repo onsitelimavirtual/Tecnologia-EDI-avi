@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-26T21:43:07.334Z",
+  "generatedAt": "2026-11-27T03:40:03.653Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -92,18 +92,18 @@
       "source": "https://www.agenciasp.sp.gov.br"
     },
     {
+      "id": "lead-328b22eb11b50c5d",
+      "title": "Concurso Público nº 001/2026: Prefeitura de Iepê abre inscrições - Prefeitura de Iepê",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
+      "published": "2026-11-26",
+      "source": "https://www.iepe.sp.gov.br"
+    },
+    {
       "id": "lead-b43910f326682b18",
       "title": "Coren-SP abre inscrições para concurso público com vagas para enfermeiros - Coren-SP",
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSzJBU0wwUkhNRW5RSmpQemRhUF9lb2ZmWThJZEFxOGc1amx5Ym1lVUNaWncwSTlubnEwSUlSaUZnMTVqcHZZcWN1SVFob3JGN3AzU0FoZG54U0tZc2Z1R29peG90andJc012T0ZwZkwwbURQb2o2MU1WcVhoTlN0RTVRT2x1dTg5MFVYdEVweHJ3STVsVDNfZmJzWWYtVkZnR05DdnNCQjQ2QWNLUzg4bi1XRVc?oc=5",
       "published": "2026-11-26",
       "source": "https://portal.coren-sp.gov.br"
-    },
-    {
-      "id": "lead-328b22eb11b50c5d",
-      "title": "Concurso Público nº 001/2026:... - Prefeitura de Iepê",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVXNPa2lZT3V6Q19BaHNPM3RpUzUtYjVBdFJTNTczcmR1Y0UwNjZTeHZDQVZhWFA1WHhpclExSGxjZkdsVjlVQ0dBR0JEckxqSXJrNzZRSUZad2w4QXgzQVE1M3RWQ0hTVnR6cC1aRzFpa0pQbEctS3k2LWtsNjlvTWY2TUx6bDJsejdwZUFwSWg3YkFWU2R3dDRPRUNaRlNjM3RjZXdwUjEwT3pTOVF4aXdFWURnQQ?oc=5",
-      "published": "2026-11-26",
-      "source": "https://www.iepe.sp.gov.br"
     },
     {
       "id": "lead-b9f155ff2704e8b7",
