@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "verifiedAt": "2026-10-15",
-  "generatedAt": "2026-11-27T19:03:43.747Z",
+  "generatedAt": "2026-11-28T03:21:39.575Z",
   "status": "curated_schedule",
   "discoveryStatus": "ok",
   "curationNote": "Registros selecionados manualmente a partir de páginas e editais da banca Cebraspe, consultados em 15/10/2026. Alterações posteriores exigem nova verificação.",
@@ -85,11 +85,39 @@
   ],
   "leads": [
     {
+      "id": "lead-e1d227e004f9cd6c",
+      "title": "Manausprev orienta 18,9 mil inscritos no concurso a consultar locais de prova - Prefeitura de Manaus",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPejM5RmRlZk5qckRQWTh5RkpoNTRyTWltNV8yOGhNWHBhc0M0S0hfLU5vMENES01pYXVtTWZuWnFVaTZYTEhTSnJ5RnZhTkhWVEtuNDdST256YkRPTk1vOE9Kb293RTZiU3k0UEVnd1F1S0MzTGhkMy10eUJfVFJCclh1aDczZw?oc=5",
+      "published": "2026-11-27",
+      "source": "https://www.manaus.am.gov.br"
+    },
+    {
+      "id": "lead-c1a0e88c2cf30ea4",
+      "title": "Concurso para o Curso de Formação de Oficiais da Polícia Militar do Estado da Paraíba - PM - PMPB",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE40RHB1MUtmdmtOb1BpaEE2dDlndWo5aGc3aE55Q1lXclFHUVdSOHcwR3VRT2FBV0ZCazlNNmhVT1RNcEN0LXo3MDRubkNkX29udUp5SWFyWHVBM3ZHcGJ2cVJZYnJsZmpLVUdTbjVLWlBoZjZra3hQYkV3?oc=5",
+      "published": "2026-11-27",
+      "source": "https://www.pm.pb.gov.br"
+    },
+    {
       "id": "lead-eaf6483c21b7f444",
       "title": "Inscrições do Processo Seletivo Simplificado terminam nesta sexta-feira (27) - Prefeitura de São Pedro da Aldeia",
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMU5IMmV2QUQ1aE5qQUxZRHhDWUxBUmdiX2RHS2FPXzd3alFNOXR1bjJqZmFfZlEtN00xUkNmTWY5WVlGNDNrU2xyaEZZOUZTR3ZaTDZXSnh4S2dJS0YzVlcxTXpfWmppRDk2TkxibkFJUmMxeG5EM1MyYkhtMGJBSWJjMGZqMFU1ZldZZUpReFJwZFJBbjUxTWk1VXhuQW90?oc=5",
       "published": "2026-11-27",
       "source": "https://pmspa.rj.gov.br"
+    },
+    {
+      "id": "lead-9c2b3dedb8ac73dd",
+      "title": "SECRETARIA DE ESTADO DA ADMINISTRAÇÃO DO MARANHÃO (SEAD/MA) POLÍCIA CIVIL DO MARANHÃO (PCMA) CONCURSO PÚBLICO PARA O PROVI - UnB",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNXzQyNUhLQ1VxNTZKQ29rbTB5aTNwbVhTTk83S0pqYXZELTJCZ091NjJLRTBTT09hS3VNNGdjVnZoNlFJYm93U0R0UUg2Z0FQYmNpcFpZVVhqWERid3VTdURxejFFSnJ6Vk9IOTdZNnBxcFE5MWZFMkczOVdyWjc4RGVScTBpcDVpV0JkYXhRdi1fN0VtY25fNHN0Y01OdTF4TXRrVXBIWE1QSE1YNHFxM1NQUEhGNjJSazI1T2dDSF94WjdmQWlCc1E4SWd2UQ?oc=5",
+      "published": "2026-11-26",
+      "source": "https://cdn.cebraspe.org.br"
+    },
+    {
+      "id": "lead-e326df840fcafb6c",
+      "title": "CONCURSO PÚBLICO DE PROVASE TÍTULOS PARAOUTORGA DE DELEGAÇÕES DE NOTASE DE REGISTRO DO FORO EXTRAJUDICIAL DO ESTADODE MATOGR - UnB",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRDNQV2lhV19UTnhiSHRIVHo2X0ZjOGxud1VBNDdSaTQtWHFwck5kWWNfbVZTWXB5UFRrcjJJTldKbzg1TWZZT0c4bnk1SUZTOHJLVUhvTGZtRmVSbzFWRm9wZndGdjFaUzVXbGppdmV2ODgyUjJHZmZjd0V2NHJGUHBnZWlHMFBFd0hzLW9CWU5kT3pVV2p3b0o1WnlhRzRFSU5xUGdrcWU0ZkFoZXRLZ1FuSlFBWlZVd2ZqbVlndzFGZ3F2RWxwVDNlTUVrdw?oc=5",
+      "published": "2026-11-26",
+      "source": "https://cdn.cebraspe.org.br"
     },
     {
       "id": "lead-34115f62c71acd6b",
@@ -141,9 +169,9 @@
       "source": "https://www.cebraspe.org.br"
     },
     {
-      "id": "lead-927cf43d02f0c58d",
+      "id": "lead-0feb70fe22661058",
       "title": "AGÊNCIA REGULADORA DE SERVIÇOS PÚBLICOS DELEGADOS DO PARANÁ (AGEPAR) CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMA - UnB",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOLUUweVU0Ri1pX1lBMHoxc2Q5WDhPZW9IdVdfXzMtN1RkN2RhVk9jWDlTd2xHZUw4WGU5aEtFTnVTbkNZZjBqalFVc2ZDbzRmTnJFVkZFZjZYQmhXa2FnamtLVG8zSDFYOXJuVXhQZ05uNzBfV2RXZVdySlV6YWFmdk95c0tNTl9HOTVWSWF5dk5vM1RTbDJPWXE2a0FwbWVFakZaZDVrNjdsUXlmcENxLXJDNFhhRWowVEFudndqU3k5eEJNajdj?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNTFhkU0loSS0tN3N3U3pxTm11VEIwM2tuZ0R3T2tWTlJkWlQzeU9Jc2tZZFc3YXVWN0pNZWNyd2tXd1RoTlUtaHM2QVZYLVVaeXo0Z1Y4TFRhZGRBLWg3MzRzczAwcTFrbGVFRGJadWJGVV9PcVk1eEo1d20yUnNUYUdmUVBjNmRwWkdJNHVhVGhkaHJSdFpldkpzdlJJTWZScFZfeGotemNub1d6NnI5NUFvYncxNTlJTXB2UjhSSmt3M2RxeWxF?oc=5",
       "published": "2026-11-25",
       "source": "https://cdn.cebraspe.org.br"
     },
@@ -167,34 +195,6 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUjF3QWZva2h6MWxWUVN1U2lfblQtVlVmWWpKRnBuSHdWRll0SUtTSklyOUtVUmEtUzlCSWZicVM5X2JmQVBXNGtxZW1DVzhZNHlkQTBQYTE2aXBDNE1KQjRUb0tWOUE3RS04NVFYNkZsdExQR2xTZXM2eDB0c0tUalFFcXlTbFBocTkyZ0xyTXRiX0hCbTNN?oc=5",
       "published": "2026-11-25",
       "source": "https://www.chapeco.sc.gov.br"
-    },
-    {
-      "id": "lead-aef280a5e06bffb3",
-      "title": "CONCURSO PÚBLICO DE QUEIMADOS DIVULGA GABARITOS OFICIAIS PRELIMINARES - Prefeitura de Queimados",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbG9CdmpEa0E3ODJnR0JhbTJoMFhFVDh0QkFxR2stdHJOQXJlVklTQzdyb1plNktYNGNIa1E3MWxSaWVtUUxDLWw3MkNSdFhjbGlMVldOOW95aFpWdnZuR3VOWEU1azdJNjluOUdMbUdXbnFCX0ZYSFVybTFvNkljVF9fX2k4Vjl1ODFfUEZlV3ZESTFvTWJud0ZSRHNMaFU?oc=5",
-      "published": "2026-11-25",
-      "source": "https://queimados.rj.gov.br"
-    },
-    {
-      "id": "lead-2af2b628c808dd4d",
-      "title": "MEC oferta cerca de 70 mil vagas em formação continuada em educação especial inclusiva — Ministério da Educação - Governo Federal",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNDdvelFYVU9ra1hnbHVHaF96Z0JVNFVrNHM3cHpnY3Nmd2dYSlJfSXdOWXEtQTVYcDEtRkxYMUU2anlFZ0lzbWwwOXA2a043S3p5NEZoUms0el9Sc1pHc2tKbkI0RFFLcnJjZ2lPOXpnRlN4MktLTjBzS1BjUlRLdVZNcEQ0ZFk4U2pWLTdQOF90TDhFeENjWlBIY24wdU1jTGpfZGtkak9OOWdubnNUZDhmLXZCMldXVlMwQXBKSmJBMEVIR1FEZzU5VXlENW1KUUhHUG1jTThYMGJoejVubg?oc=5",
-      "published": "2026-11-25",
-      "source": "https://www.gov.br"
-    },
-    {
-      "id": "lead-464c866ea111d67e",
-      "title": "PREFEITURA DE ORÓS PRORROGA INSCRIÇÕES DO CONCURSO PÚBLICO COM 95 VAGAS - Prefeitura de Orós",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGNSSkxzVW8xMzNuYXo1b3NRRXV5N1hCSjhYNUxFT3NhbmhqemdLM29mZHFnVUJHMDRialRkZVh0Qjg4bTJIT0xweU5naExnMTZ2TG9qWXZ2RDg5SHpSWkQ1Rm1ZcGd0LUZUMnBLcm9Qd1JuRDlhX0ZOWFFwTXBNaU0zek9ycTdVa0R5M2RB?oc=5",
-      "published": "2026-11-25",
-      "source": "https://oros.ce.gov.br"
-    },
-    {
-      "id": "lead-c0d3a32c9e843de0",
-      "title": "ÚLTIMO DIA DE INSCRIÇÕES PARA O CONCURSO PÚBLICO DE CRUZ DO ESPÍRITO SANTO - Prefeitura de Cruz do Espírito Santo",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOMHI2RW9STlFRMmZPS1BDSWdqZy1FRjVfbVlGQTNmOVVzWm5RSDZqQzkwbjBSbnpqcFZkSkNCR0RWSUpHMHRpTWgwMWRrWDZ1MjJFeW1GSktqLUpETWVSNGE3eV8xa0JEM18yMFBJeDlCODJoUWV0eHFPUy1adjFzdTFFOVIxWksyU1J4QVlpd3JqVk5VSkVNcGU0bDZDZG9BS0QtQjBFWF9keEp3WGFzYjBzQnNxMkxUOGRFQzV3?oc=5",
-      "published": "2026-11-25",
-      "source": "https://cruzdoespiritosanto.pb.gov.br"
     }
   ]
 }

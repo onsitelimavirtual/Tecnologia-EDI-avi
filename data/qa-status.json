@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "product": "Painel de Oportunidades de Emprego",
   "engine": "QA Integridade 1.0",
-  "generatedAt": "2026-11-27T19:03:44.438Z",
+  "generatedAt": "2026-11-28T03:21:40.123Z",
   "status": "passed_with_warnings",
   "summary": "Integridade estrutural aprovada com 3 alerta(s) para revisão.",
   "totals": {
@@ -164,7 +164,7 @@
   "warnings": [
     {
       "code": "CONTEST_CURATED_STALE",
-      "message": "A curadoria de concursos foi conferida há 43 dias. É necessária revisão humana de editais, retificações, suspensões e cancelamentos."
+      "message": "A curadoria de concursos foi conferida há 44 dias. É necessária revisão humana de editais, retificações, suspensões e cancelamentos."
     },
     {
       "code": "NO_CONTESTS_IN_PERIOD",
